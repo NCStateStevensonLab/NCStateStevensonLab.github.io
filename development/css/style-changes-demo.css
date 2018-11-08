@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');*/
 
 /* Set font-styles to graphic font */
+/*
 .stageContainer .content .fontKalam400 p span, 
 .stageContainer .content .fontKalam400 p strong, 
 .stageContainer .content .fontKalam400 p em {
@@ -9,6 +10,7 @@
   line-height: 1.2rem !important;
   font-size: 18px !important;
 }
+*/
 
 
 
@@ -334,8 +336,9 @@ body {
 /* Change CSS speech bubble styling */
 
 /* Less Contrast to Speech Bubble Outline */
-.speech-bubble-left, 
-.speech-bubble-right {
+
+.stageContainer .content .speech-bubble-left, 
+.stageContainer .content .speech-bubble-right {
   border-color: rgba(102,102,102,.2) !important;
 }
 
