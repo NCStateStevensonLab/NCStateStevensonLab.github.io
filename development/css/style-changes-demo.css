@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
+
+/* Set font-styles to graphic font */
+.fontKalam400 p span {
+  font-family: 'Kalam', cursive !important;
+  font-weight: 400 !important;
+  line-height: 1.5rem !important;
+  font-size: 19px !important;
+}
+
+.fontKalam400 p span em {
+  font-family: 'Kalam', cursive !important;
+  font-weight: 400 !important;
+  line-height: 1.5rem !important;
+  font-size: 19px !important;
+}
+
+
+/* Change CSS speech bubble styling */
+
+/* Less Contrast to Speech Bubble Outline */
+.speech-bubble-left, 
+.speech-bubble-right {
+  border-color: rgba(102,102,102,.2);
+}
+
+
 /* Begin Smart Sparrow Styles */
 body {
   font-family: 'Arial', sans-serif
@@ -294,8 +321,7 @@ body {
 
 /* Begin Custom Styles */
 
-/* iFrame Full Width */
-
+/* Set iFrame to Full Width */
 /* set width of this particular iFrame element (with id of iFrameFullWidth) to full width */
 #iFrameFullWidth {
   width: 100% !important;
