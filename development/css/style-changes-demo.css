@@ -336,7 +336,7 @@ body {
 /* Less Contrast to Speech Bubble Outline */
 .speech-bubble-left, 
 .speech-bubble-right {
-  border-color: rgba(102,102,102,.2);
+  border-color: rgba(102,102,102,.2) !important;
 }
 
 
