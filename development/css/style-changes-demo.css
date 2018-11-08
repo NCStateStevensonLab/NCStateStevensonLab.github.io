@@ -1,38 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
 
 /* Set font-styles to graphic font */
-.fontKalam400 p span {
-  font-family: 'Kalam', cursive !important;
-  font-weight: 400 !important;
-  line-height: 1.5rem !important;
-  font-size: 19px !important;
-}
-
 .stageContainer .content .fontKalam400 p span, 
 .stageContainer .content .fontKalam400 p strong, 
 .stageContainer .content .fontKalam400 p em {
   font-family: 'Kalam', cursive !important;
   font-weight: 400 !important;
-  line-height: 1.5rem !important;
-  font-size: 19px !important;
+  line-height: 1.2rem !important;
+  font-size: 18px !important;
 }
 
-
-.fontKalam400 p span em {
-  font-family: 'Kalam', cursive !important;
-  font-weight: 400 !important;
-  line-height: 1.5rem !important;
-  font-size: 19px !important;
-}
-
-
-/* Change CSS speech bubble styling */
-
-/* Less Contrast to Speech Bubble Outline */
-.speech-bubble-left, 
-.speech-bubble-right {
-  border-color: rgba(102,102,102,.2);
-}
 
 
 /* Begin Smart Sparrow Styles */
@@ -353,6 +330,14 @@ body {
   max-width: 66.5% !important;
 }
 
+
+/* Change CSS speech bubble styling */
+
+/* Less Contrast to Speech Bubble Outline */
+.speech-bubble-left, 
+.speech-bubble-right {
+  border-color: rgba(102,102,102,.2);
+}
 
 
 
