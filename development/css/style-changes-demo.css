@@ -8,6 +8,16 @@
   font-size: 19px !important;
 }
 
+.stageContainer .content .fontKalam400 p span, 
+.stageContainer .content .fontKalam400 p strong, 
+.stageContainer .content .fontKalam400 p em {
+  font-family: 'Kalam', cursive !important;
+  font-weight: 400 !important;
+  line-height: 1.5rem !important;
+  font-size: 19px !important;
+}
+
+
 .fontKalam400 p span em {
   font-family: 'Kalam', cursive !important;
   font-weight: 400 !important;
