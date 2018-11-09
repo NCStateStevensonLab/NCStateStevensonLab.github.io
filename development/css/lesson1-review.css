@@ -300,3 +300,7 @@ body {
     border-style: solid !important;
 }
 
+.stageContainer .content {
+  overflow: hidden;
+}
+
