@@ -289,7 +289,7 @@ body {
 /* End Smart Sparrow Styles */
 
 /* Begin Custom Styles (change for Smart Sparrow code styles only) */
-speech-color-gray {
+.speech-color-gray {
 /*
   background-color: rgba(242,242,242,1.0) !important;
   border: 1px solid rgba(102,102,102,.2) !important;
