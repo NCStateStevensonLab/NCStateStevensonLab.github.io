@@ -304,13 +304,19 @@ body {
   overflow: hidden;
 }
 
+/* See if will set CMS background image */
+.background {
+  background-image: url(https://ncstatestevensonlab.github.io/development/img/cow-background-img-for-cover.jpg);
+}
+
+
 /* Set Cover Image */
 .cover .background {
   background-image: url(https://ncstatestevensonlab.github.io/development/img/cow-background-img-for-cover.jpg);
 }
 
 .lesson-title-text {
-  font-size: 60px;
+  font-size: 72px;
   text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
 }
 
