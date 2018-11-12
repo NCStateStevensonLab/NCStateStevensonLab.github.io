@@ -1,4 +1,4 @@
 
-.pollResponses axis:nth-child(1) {
-    color: green;   
+.pollResponses bar:nth-of-type(1) {
+    fill: green;   
 }
