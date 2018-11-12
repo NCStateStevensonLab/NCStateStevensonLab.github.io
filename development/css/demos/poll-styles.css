@@ -6,3 +6,7 @@
 bar:nth-of-type(1) {
     fill: green;   
 }
+
+.bar:nth-of-type(1) {
+    fill: orange;   
+}
