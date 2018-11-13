@@ -294,8 +294,13 @@ body {
   background-color: rgba(242,242,242,1.0) !important;
   border: 1px solid rgba(102,102,102,.2) !important;
 */
+  /* -- My Preference of Colors is Solid Gray (#e0e0e0)
+/*
     border-color: rgba(242,242,242,.4) !important;
     background-color: #e0e0e0 !important;
+*/
+    background: #F2F2F2 !important;
+    border-color: rgba(102,102,102, .2) !important;
     border-width: 1px !important;
     border-style: solid !important;
 }
