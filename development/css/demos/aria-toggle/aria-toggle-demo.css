@@ -1,0 +1,13 @@
+/* ARIA Demo*/
+
+.aria-toggle[aria-pressed=false] {
+  -webkit-filter: blur(1px) grayscale(100%);
+  filter: blur(1px) grayscale(100%);
+}
+
+.aria-toggle {
+    border-radius: 50% !important;
+    outline: none !important;
+    background-color: transparent !important;
+    border: 4px solid white !important;
+}
