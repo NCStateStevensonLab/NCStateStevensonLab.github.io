@@ -9,3 +9,8 @@ body{font-family:'Arial',sans-serif}.headerContainer{background:#cc0000}@media (
 .content {
   overflow: hidden;
 }
+
+.speech-bubble-left,
+.speech-bubble-right {
+  border: 2px solid #333;
+}
