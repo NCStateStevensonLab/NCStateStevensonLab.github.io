@@ -12,5 +12,6 @@ body{font-family:'Arial',sans-serif}.headerContainer{background:#cc0000}@media (
 
 .speech-bubble-left,
 .speech-bubble-right {
-  border: 2px solid #333;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
 }
