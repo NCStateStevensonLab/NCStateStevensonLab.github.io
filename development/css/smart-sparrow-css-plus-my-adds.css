@@ -10,8 +10,14 @@ body{font-family:'Arial',sans-serif}.headerContainer{background:#cc0000}@media (
   overflow: hidden;
 }
 
-.speech-bubble-left,
+.speech-bubble-left, 
 .speech-bubble-right {
   border: 2px solid #333 !important;
   background: #FFF !important;
+}
+
+.speech-bubble-bottom:before {
+  left: 44%;
+  top: 92%;
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
 }
