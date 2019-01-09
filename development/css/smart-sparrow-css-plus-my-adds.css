@@ -6,6 +6,40 @@ body{font-family:'Arial',sans-serif}.headerContainer{background:#cc0000}@media (
 
 /* BEGIN Custom CSS */
 
+/* Add animation speeds excluded from animate.css */
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* end add animation speeds
+
+
 .content {
   overflow: hidden;
 }
