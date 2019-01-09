@@ -354,7 +354,8 @@ body {
   content: '';
   position: absolute;
   left: 44%;
-  top: 93%;
+/*  top: 93%;*/
+  top: calc(100% - 14px);
   transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
   width: 30px;
   height: 30px;
