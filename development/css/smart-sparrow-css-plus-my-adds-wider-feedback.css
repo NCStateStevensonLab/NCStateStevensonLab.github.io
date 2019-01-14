@@ -440,5 +440,5 @@ body {
 }*/
 
 .content div {
-  display: flex;
+  display: flex !important;
 }
