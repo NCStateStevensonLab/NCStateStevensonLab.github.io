@@ -386,11 +386,19 @@ body {
 }
 
 .feedbackContainer .content {
-  width: 100% !important;
+/*  width: 100% !important;*/
+  width: 70% !important;
+  margin: 0 auto;
+}
+
+.feedbackContainer .content:after {
+  left: 86.5%;
 }
 
 .feedbackContainer .toggleFeedbackBtn {
-  left: 318px !important;
+/*  left: 318px !important;*/
+  left: 517px !important;
+  min-width: 138px;
 }
 
 .feedbackContainer .toggleFeedbackBtn .icon {
@@ -398,7 +406,7 @@ body {
 }
 
 .feedbackContainer .toggleFeedbackBtn .icon::before {
-  background: url(../assets/icon-feedback-dark.svg) !important;
+  background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-dark.svg) !important;
 }
 
 .feedbackContainer .toggleFeedbackBtn::after {
@@ -408,5 +416,5 @@ body {
     display: flex;
     align-items: center;
     align-self: center;
-    height: 100%;
+    height: 60%;
 }
