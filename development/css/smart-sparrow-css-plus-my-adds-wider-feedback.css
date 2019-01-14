@@ -429,7 +429,7 @@ body {
 
 /* prevent image from compressing */
 #stage-feedback > div.content div img {
-  width: 100%;
+  width: 100% !important;
   align-self: center;
 }
 
