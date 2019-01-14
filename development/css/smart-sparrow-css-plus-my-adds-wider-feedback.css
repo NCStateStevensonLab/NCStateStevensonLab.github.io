@@ -394,7 +394,8 @@ body {
 }
 
 .feedbackContainer .content:after {
-  left: 85.5%;
+/*  left: 85.5%;*/
+  left: 87.57%;
 }
 
 .feedbackContainer .toggleFeedbackBtn {
@@ -409,11 +410,16 @@ body {
 
 .feedbackContainer .toggleFeedbackBtn .icon {
   float: left;
-  margin-right: 1px;
+  margin-right: 9px;
 }
 
 .feedbackContainer .toggleFeedbackBtn .icon::before {
   background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-dark.svg) !important;
+}
+
+.feedbackContainer #stage-feedback {
+  left: 14px;
+  right: 17px;
 }
 
 .feedbackContainer .toggleFeedbackBtn::after {
