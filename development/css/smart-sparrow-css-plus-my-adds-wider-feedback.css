@@ -427,6 +427,12 @@ body {
   display: flex !important;
 }
 
+/* prevent image from compressing */
+#stage-feedback > div.content div img {
+  width: 100%;
+  align-self: center;
+}
+
 .feedbackContainer .toggleFeedbackBtn::after {
     content: "Feedback";
     font-size: 14px;
