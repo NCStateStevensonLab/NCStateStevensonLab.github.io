@@ -376,3 +376,52 @@ body {
   height: 100%;
   background: inherit
 }
+
+
+
+/* Wide Feedback */
+
+.feedbackContainer {
+  width: 100% !important;
+}
+
+.feedbackContainer .content {
+  width: 100% !important;
+/*
+  width: 70% !important;
+  margin: 0 auto;
+*/
+}
+
+.feedbackContainer .content:after {
+  left: 85.5%;
+}
+
+.feedbackContainer .toggleFeedbackBtn {
+/*  left: 318px !important;*/
+/*
+  left: 517px !important;
+  min-width: 138px;
+*/
+  left: 547px !important;
+  min-width: 164px;
+}
+
+.feedbackContainer .toggleFeedbackBtn .icon {
+  float: left;
+  margin-right: 1px;
+}
+
+.feedbackContainer .toggleFeedbackBtn .icon::before {
+  background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-dark.svg) !important;
+}
+
+.feedbackContainer .toggleFeedbackBtn::after {
+    content: "Feedback";
+    font-size: 14px;
+    float: left;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 60%;
+}
