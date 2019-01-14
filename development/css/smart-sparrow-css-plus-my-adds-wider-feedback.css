@@ -433,6 +433,12 @@ body {
     height: 60%;
 }
 
+.content div img {
+  float: left;
+  margin-right: 25px;
+}
+
+/*
 .feedbackImageLeft {
   float: left;
   margin-right: 20px;
@@ -441,4 +447,4 @@ body {
 .feedbackImageRight {
   float: right;
   margin-left: 20px;
-}
+}*/
