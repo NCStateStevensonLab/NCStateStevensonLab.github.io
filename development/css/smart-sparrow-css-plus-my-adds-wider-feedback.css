@@ -423,6 +423,10 @@ body {
   right: 17px;
 }
 
+#stage-feedback > div.content div {
+  display: flex !important;
+}
+
 .feedbackContainer .toggleFeedbackBtn::after {
     content: "Feedback";
     font-size: 14px;
@@ -439,6 +443,8 @@ body {
   margin-right: 25px;
 }*/
 
+/*
 .content div {
   display: flex !important;
 }
+*/
