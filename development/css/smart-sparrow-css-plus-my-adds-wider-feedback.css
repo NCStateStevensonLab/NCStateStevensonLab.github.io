@@ -430,21 +430,15 @@ body {
     display: flex;
     align-items: center;
     align-self: center;
-    height: 60%;
-}
-
-.content div img {
-  float: left;
-  margin-right: 25px;
+    height: 59%;
 }
 
 /*
-.feedbackImageLeft {
+.content div img {
   float: left;
-  margin-right: 20px;
-}
-
-.feedbackImageRight {
-  float: right;
-  margin-left: 20px;
+  margin-right: 25px;
 }*/
+
+.content div {
+  display: flex;
+}
