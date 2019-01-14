@@ -382,13 +382,27 @@ body {
 /* Wide Feedback */
 
 .feedbackContainer {
-  width: 100%;
+  width: 100% !important;
 }
 
 .feedbackContainer .content {
-  width: 100%;
+  width: 100% !important;
 }
 
 .feedbackContainer .toggleFeedbackBtn {
-  left: 318px;
+  left: 318px !important;
+}
+
+.feedbackContainer .toggleFeedbackBtn .icon::before {
+  background: url(../assets/icon-feedback-dark.svg);
+}
+
+.feedbackContainer .toggleFeedbackBtn::after {
+    content: "Feedback";
+    font-size: 14px;
+    float: left;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
 }
