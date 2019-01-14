@@ -376,3 +376,19 @@ body {
   height: 100%;
   background: inherit
 }
+
+
+
+/* Wide Feedback */
+
+.feedbackContainer {
+  width: 100%;
+}
+
+.feedbackContainer .content {
+  width: 100%;
+}
+
+.feedbackContainer .toggleFeedbackBtn {
+  left: 318px;
+}
