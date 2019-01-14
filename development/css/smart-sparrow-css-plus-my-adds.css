@@ -393,8 +393,12 @@ body {
   left: 318px !important;
 }
 
+.feedbackContainer .toggleFeedbackBtn .icon {
+  float: left;
+}
+
 .feedbackContainer .toggleFeedbackBtn .icon::before {
-  background: url(../assets/icon-feedback-dark.svg);
+  background: url(../assets/icon-feedback-dark.svg) !important;
 }
 
 .feedbackContainer .toggleFeedbackBtn::after {
