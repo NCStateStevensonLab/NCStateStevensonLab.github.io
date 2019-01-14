@@ -395,7 +395,8 @@ body {
 
 .feedbackContainer .content:after {
 /*  left: 85.5%;*/
-  left: 87.57%;
+/*  left: 87.57%;*/
+  left: 87%;
 }
 
 .feedbackContainer .toggleFeedbackBtn {
@@ -430,4 +431,14 @@ body {
     align-items: center;
     align-self: center;
     height: 60%;
+}
+
+.feedbackImageLeft {
+  float: left;
+  margin-right: 20px;
+}
+
+.feedbackImageRight {
+  float: right;
+  margin-left: 20px;
 }
