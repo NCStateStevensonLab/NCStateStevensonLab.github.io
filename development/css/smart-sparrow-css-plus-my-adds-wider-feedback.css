@@ -423,14 +423,23 @@ body {
   right: 17px;
 }
 
+/*
 #stage-feedback > div.content div {
   display: flex !important;
 }
+*/
 
 /* prevent image from compressing */
+/*
 #stage-feedback > div.content div img {
   width: 100% !important;
   align-self: center;
+}
+*/
+
+
+#stage-feedback > div.content div img {
+  float: left;
 }
 
 .feedbackContainer .toggleFeedbackBtn::after {
