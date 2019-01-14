@@ -440,6 +440,7 @@ body {
 
 #stage-feedback > div.content div img {
   float: left;
+  margin-right: 25px;
 }
 
 .feedbackContainer .toggleFeedbackBtn::after {
