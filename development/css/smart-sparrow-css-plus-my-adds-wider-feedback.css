@@ -534,5 +534,29 @@ body:not(.no-restyle) #stage-content-wrapper > div {
 }
   
 .feedback-correct #stage-feedback .content div div:before {
+/*
   background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-dark.svg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  width: 24px;
+  height: 24px;
+  z-index: 1030;
+  margin-right: 8px;
+  display: flex;
+  float: left;
+  align-items: center;
+  min-height: 24px;
+  height: 100%;
+*/
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #4AD3AC url(https://style.smartsparrow.com/spr-training-101-ls/2.1.0/assets/tick.svg) no-repeat center center !important;
+  box-shadow: 0 8px 49px 7px rgba(0,0,0,0.08), 0 18px 32px 0 rgba(0,0,0,0.1), 0 9px 12px 0 rgba(0,0,0,0.15);
 }
