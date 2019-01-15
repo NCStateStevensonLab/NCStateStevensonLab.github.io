@@ -420,18 +420,18 @@ body {
   
 */
   
-  body:not(.no-restyle) > .stageContainer .content {
-    box-shadow: none;
-    transform-origin: center top 0px;
-    position: relative !important;
-    margin: 141px auto 80px;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: rgb(217, 217, 222) !important;
-    border-image: initial !important;
-    background: rgb(255, 255, 255) !important;
-    border-radius: 4px !important;
-  }
+body:not(.no-restyle) .stageContainer .content {
+  box-shadow: none;
+  transform-origin: center top 0px;
+  position: relative !important;
+  margin: 141px auto 80px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(217, 217, 222) !important;
+  border-image: initial !important;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 4px !important;
+}
 
 .feedbackContainer {
   width: 100% !important;
