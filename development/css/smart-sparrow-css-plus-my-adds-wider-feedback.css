@@ -420,7 +420,7 @@ body {
   
 */
   
-body:not(.no-restyle) .stageContainer .content {
+body:not(.no-restyle) #stage-content-wrapper > div {
   box-shadow: none;
   transform-origin: center top 0px;
   position: relative !important;
