@@ -380,6 +380,43 @@ body {
 
 
 /* Wide Feedback */
+@media (max-width:700px) {
+  .feedbackContainer .toggleFeedbackBtn {
+    left: 227px !important;
+    min-width: 139px;
+  }
+  
+/*
+  #stage-content-wrapper > div:not(.no-restyle) {
+    
+  }
+*/
+}
+
+
+@media (max-width:900px) {
+.feedbackContainer .toggleFeedbackBtn {
+  left: 227px !important;
+  min-width: 139px;
+}
+
+
+/* Checks that the .no-restyle class has not been applied to the stage element to provide stage opacity and background color choices 
+  that were overridden in the original theme */
+  
+.stageContainer .content:not(.no-restyle) {
+  box-shadow: none;
+  transform-origin: center top 0px;
+  position: relative !important;
+  margin: 141px auto 80px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(217, 217, 222) !important;
+  border-image: initial !important;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 4px !important;
+}  
+  
 
 .feedbackContainer {
   width: 100% !important;
@@ -408,6 +445,8 @@ body {
   left: 547px !important;
   min-width: 164px;
 }
+
+
 
 .feedbackContainer .toggleFeedbackBtn .icon {
   float: left;
@@ -464,3 +503,8 @@ body {
   display: flex !important;
 }
 */
+
+.feedback-correct #stage-feedback {
+/*  border: 4px solid forestgreen;*/
+  border: 4px solid rgba(39, 159, 39, .8) !important;
+}
