@@ -530,5 +530,5 @@ body:not(.no-restyle) #stage-content-wrapper > div {
 }
   
 .bottomContainer.fixed.feedback-correct #stage-feedback .content div div {
-  color: steelblue;
+  background: steelblue;
 }
