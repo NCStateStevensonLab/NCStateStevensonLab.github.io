@@ -523,3 +523,12 @@ body:not(.no-restyle) #stage-content-wrapper > div {
 /*  border: 4px solid forestgreen;*/
   border: 4px solid rgba(39, 159, 39, .8) !important;
 }
+
+  
+.bottomContainer.fixed.feedback-correct #stage-feedback {
+  background: green;
+}
+  
+.bottomContainer.fixed.feedback-correct #stage-feedback .content div div {
+  color: steelblue;
+}
