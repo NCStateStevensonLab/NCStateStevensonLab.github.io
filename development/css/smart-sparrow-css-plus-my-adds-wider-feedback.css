@@ -529,6 +529,10 @@ body:not(.no-restyle) #stage-content-wrapper > div {
   background: green;
 }
   
-.bottomContainer.fixed.feedback-correct #stage-feedback .content div div {
+.feedback-correct #stage-feedback .content div div {
   background: steelblue;
+}
+  
+.feedback-correct #stage-feedback .content div div::before {
+  background: url(https://style.smartsparrow.com/default-viewer-themes/1.9.1/assets/icon-feedback-dark.svg) !important;
 }
