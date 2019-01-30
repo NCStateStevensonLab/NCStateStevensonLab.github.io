@@ -376,3 +376,28 @@ body {
   height: 100%;
   background: inherit
 }
+
+
+/* Floor Drain Image Text Rotation */
+.nicheFolderLeftImageText {
+  transform: rotate(3.7deg);
+}
+
+/* Conveyer Belts Image Text Rotation */
+.nicheFolderRightImageText {
+  transform: rotate(-2.5deg);
+}
+
+/*Dairy Learning Center Image */
+.singleImageText {
+  transform: rotate(-1deg);
+}
+
+/* Add shorter duration classes */
+.delay-0-5 {
+  animation-delay: 0.5s
+}
+
+.delay-1-5 {
+  animation-delay: 1.5s
+}
