@@ -1,0 +1,7 @@
+1
+00:00:01,00 --> 00:00:09,00
+From the Listeria Temperature Growth chart, you can see that Listeria grows best at room temperature with the optimum growth range between 86ºF and 98.6ºF.  Listeria can also grow at refrigeration temperatures, so that means you cannot use refrigeration as a preventive control. 
+
+2
+00:00:09,00 --> 00:00:12,00
+And freezing only stops the growth of Listeria, it does not kill Listeria, so freezing also cannot be used as a preventive control. That’s why, in the dairy industry, pasteurization is the main listericidal control used to eliminate Listeria monocytogenes that may contaminate raw milk
