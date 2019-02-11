@@ -350,6 +350,7 @@ body {
   border-top: inherit
 }
 
+/* Position speech bubble decender centered on bottom of bubble*/
 .speech-bubble-bottom:before {
   content: '';
   position: absolute;
@@ -366,9 +367,46 @@ body {
   border-top: inherit
 }
 
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 7.5%;*/
+  left: calc(100% - 319px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 83%;*/
+  left: calc(100% - 58px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
 .speech-bubble-left:after,
 .speech-bubble-right:after,
-.speech-bubble-bottom:after {
+.speech-bubble-bottom:after,
+.speech-bubble-bottom-left:after,
+.speech-bubble-bottom-right:after
+{
   content: '';
   position: absolute;
   top: 0;
@@ -400,4 +438,17 @@ body {
 
 .delay-1-5 {
   animation-delay: 1.5s
+}
+
+
+/* Add custom popup style for Fat Tom interactive */
+.FatTomPopup {
+  height: 400px;
+  margin-top: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.FatTomPopup div {
+  border-radius: 0;
 }
