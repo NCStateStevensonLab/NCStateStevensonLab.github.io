@@ -452,3 +452,49 @@ body {
 .FatTomPopup div {
   border-radius: 0;
 }
+
+/* Add custom style for carousel */
+.owl-carousel .owl-item .slide img {
+    max-height: 80vH;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+  
+.owl-carousel .owl-nav .owl-prev {
+    margin-left: 5px;
+    text-indent: -9999px;
+    line-height: 0;
+    margin-top: -30%;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    margin-left: 5px;
+    text-indent: -9999px;
+    line-height: 0;
+    margin-top: -30%;
+}
+
+.owl-prev::after {
+    font-size: 300px;
+    color: red;
+    content: "<";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+    padding: 1%;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.owl-next::after {
+    font-size: 300px;
+    color: red;
+    content: ">";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+    padding: 1%;
+    font-weight: 700;
+    font-size: 70px;
+}
