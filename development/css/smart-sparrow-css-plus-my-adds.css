@@ -401,6 +401,11 @@ body {
   border-top: inherit
 }
 
+/* The default speech bubble aside hangs from the top of the speech bubble  This centers speech bubble on left frame to create greater flexablity*/
+.sblc {
+  top: 37% !important;
+}
+
 .speech-bubble-left:after,
 .speech-bubble-right:after,
 .speech-bubble-bottom:after,
@@ -537,10 +542,35 @@ body {
     background: #ffffff;
     border: 2px solid #ffffff;
     background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
-    background-size: 40rem;
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
+    height: 60px;
+    width: 60px;
+    z-index: 999;
+    background-size: cover;
+}
+
+#stage-stage .starIconToggle input:checked + label::before {    
+    content: '';
+    transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+    transform: scale(.4) translate(-50%, -50%);
+    transform-origin: top left;
     position: absolute;
-    right: 40%;
-    bottom: 0;
+    top: 50%;
+    left: 10px;
+    margin-top: -1px;
+/*    opacity: 0;*/
+/*
+    background: #ffffff;
+    border: 2px solid #ffffff;
+*/
+    background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
     height: 60px;
     width: 60px;
     z-index: 999;
