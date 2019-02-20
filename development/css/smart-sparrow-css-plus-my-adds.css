@@ -588,3 +588,8 @@ body {
     z-index: 999;
     background-size: cover;
 }
+
+/* Hides Google Spreadsheet Footer Link */
+.iframe-spreadsheet {
+  height: 37rem;
+}
