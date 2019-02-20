@@ -417,7 +417,9 @@ body {
 }
 
 .speech-bubble-left:after,
+.speech-bubble-left-center:after,
 .speech-bubble-right:after,
+.speech-bubble-right-center:after,
 .speech-bubble-bottom:after,
 .speech-bubble-bottom-left:after,
 .speech-bubble-bottom-right:after
