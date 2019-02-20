@@ -402,8 +402,18 @@ body {
 }
 
 /* The default speech bubble aside hangs from the top of the speech bubble  This centers speech bubble on left frame to create greater flexablity*/
-.sblc {
-  top: 37% !important;
+.speech-bubble-left-center:before,
+.speech-bubble-right-center:before {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
 }
 
 .speech-bubble-left:after,
