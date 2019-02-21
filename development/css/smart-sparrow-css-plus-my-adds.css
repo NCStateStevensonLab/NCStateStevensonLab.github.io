@@ -332,6 +332,9 @@ body {
 .speech-bubble-left,
 .speech-bubble-right,
 .speech-bubble-bottom {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important;
   border: 2px solid #333 !important;
   background: #FFF !important;
 }
