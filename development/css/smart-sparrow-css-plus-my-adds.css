@@ -609,3 +609,9 @@ body {
 .iframe-spreadsheet {
   height: 37rem !important;
 }
+
+/* Adds padding to text box */
+.pad-text {
+  padding: 2% 0 0 2%;
+  width: calc(44.6%);
+}
