@@ -416,10 +416,26 @@ body {
   border-top: inherit
 }
 
+.speech-bubble-left-bottom:before,
+.speech-bubble-right-bottom:before {
+  content: '';
+  position: absolute;
+  top: 71px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
 .speech-bubble-left:after,
 .speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after,
 .speech-bubble-right:after,
 .speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after,
 .speech-bubble-bottom:after,
 .speech-bubble-bottom-left:after,
 .speech-bubble-bottom-right:after
@@ -591,5 +607,5 @@ body {
 
 /* Hides Google Spreadsheet Footer Link */
 .iframe-spreadsheet {
-  height: 37rem;
+  height: 37rem !important;
 }
