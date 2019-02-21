@@ -612,6 +612,6 @@ body {
 
 /* Adds padding to text box */
 .pad-text {
-  padding: 2% 0 0 2%;
-  width: calc(44.6%);
+  padding: 2% 0 0 2.3% !important;
+  width: calc(44.6%) !important;
 }
