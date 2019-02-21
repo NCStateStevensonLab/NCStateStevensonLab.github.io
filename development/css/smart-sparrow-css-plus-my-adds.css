@@ -330,8 +330,14 @@ body {
 }
 
 .speech-bubble-left,
+.speech-bubble-left-center,
+.speech-bubble-left-bottom,
 .speech-bubble-right,
-.speech-bubble-bottom {
+.speech-bubble-right-center,
+.speech-bubble-right-bottom,
+.speech-bubble-bottom,
+.speech-bubble-bottom-left,
+.speech-bubble-bottom-right {
   padding: 25px !important;
   box-sizing: content-box;
   overflow: visible !important;
