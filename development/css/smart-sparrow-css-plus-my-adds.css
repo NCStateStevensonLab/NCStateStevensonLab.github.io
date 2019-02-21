@@ -444,10 +444,7 @@ body {
 .speech-bubble-left-bottom:after,
 .speech-bubble-right:after,
 .speech-bubble-right-center:after,
-.speech-bubble-right-bottom:after,
-.speech-bubble-bottom:after,
-.speech-bubble-bottom-left:after,
-.speech-bubble-bottom-right:after
+.speech-bubble-right-bottom:after
 {
   content: '';
   position: absolute;
@@ -456,6 +453,19 @@ body {
   height: 100%;
   background: inherit
 }
+
+.speech-bubble-bottom:after,
+.speech-bubble-bottom-left:after,
+.speech-bubble-bottom-right:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  background: inherit
+}
+
 
 
 /* Floor Drain Image Text Rotation */
