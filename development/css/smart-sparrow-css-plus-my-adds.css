@@ -663,7 +663,17 @@ body {
 }
 
 .nc-text-button p {
-  padding: 9px 0 !important;
+  padding: 10px 0 !important;
   background: #CC0000;
-  border-radius: 10px;
+  border-radius: 4px;
+}
+
+.nc-text-button p:hover {
+  cursor: pointer;
+  background: #900;
+  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
+}
+
+.nc-text-button a span:hover {
+    border-bottom: none !important;
 }
