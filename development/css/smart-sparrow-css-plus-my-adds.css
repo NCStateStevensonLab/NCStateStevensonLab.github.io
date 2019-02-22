@@ -650,3 +650,15 @@ body {
   -moz-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
   box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
 }
+
+.nc-flashcard {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+.nc-button {
+  padding: 1%;
+  background: #CC0000;
+  border-radius: 20px;
+}
