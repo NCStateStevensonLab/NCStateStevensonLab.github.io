@@ -267,13 +267,18 @@ body {
   }
 }
 
-.speech-bubble-left:before {
+/* N added left-center to core SS code */
+.speech-bubble-left:before,
+.speech-bubble-left-center:before,
+.speech-bubble-left-bottom:before {
   left: 0;
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
 }
 
-.speech-bubble-left:after {
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
   left: 0
 }
 
