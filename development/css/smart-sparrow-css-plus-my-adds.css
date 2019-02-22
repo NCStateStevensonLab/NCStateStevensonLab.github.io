@@ -282,13 +282,17 @@ body {
   left: 0
 }
 
-.speech-bubble-right:before {
+.speech-bubble-right:before,
+.speech-bubble-right-center:before,
+.speech-bubble-right-bottom:before {
   right: 0;
   -webkit-transform: translateX(50%) rotate(135deg) skew(10deg, 10deg);
   transform: translateX(50%) rotate(135deg) skew(10deg, 10deg)
 }
 
-.speech-bubble-right:after {
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
   right: 0
 }
 
