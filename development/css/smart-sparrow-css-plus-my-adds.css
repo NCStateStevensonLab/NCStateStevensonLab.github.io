@@ -643,3 +643,10 @@ body {
   padding: 2% 0 0 2.3% !important;
   width: calc(44.6%) !important;
 }
+
+
+.flashcard-hover:hover ~ .flashcard {
+  -webkit-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  -moz-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+}
