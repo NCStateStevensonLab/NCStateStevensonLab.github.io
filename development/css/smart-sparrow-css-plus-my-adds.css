@@ -657,8 +657,13 @@ body {
   padding: 5%;
 }
 
-.nc-button {
-  padding: 1%;
+/* Sets custom text button. Text color comes from text box style */
+.nc-text-button {
+  border-radius: 0;
+}
+
+.nc-text-button p {
+  padding: 9px 0 !important;
   background: #CC0000;
-  border-radius: 20px;
+  border-radius: 10px;
 }
