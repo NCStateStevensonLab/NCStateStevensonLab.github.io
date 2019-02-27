@@ -662,21 +662,21 @@ body {
   border-radius: 0;
 }
 
-.nc-text-button p {
-  padding: 10px 0 !important;
-  background: #CC0000;
-  border-radius: 4px;
-}
-
-.nc-text-button p:hover {
-  cursor: pointer;
-  background: #900;
-  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
-}
-
 .nc-text-button a {
   text-decoration:none !important;
   display: block !important;
+  padding: 10px 0 !important;
+  background: #CC0000;
+  border-radius: 4px;
+  color: #FFF;
+}
+
+.nc-text-button a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: none !important;
+  background: #900;
+  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
 }
 
 .nc-text-button span:hover {
