@@ -674,6 +674,11 @@ body {
   transition: color .3s ease,background .3s ease,box-shadow .3s ease;
 }
 
-.nc-text-button a span:hover {
+.nc-text-button a {
+  text-decoration:none !important;
+  display: block !important;
+}
+
+.nc-text-button span:hover {
     border-bottom: none !important;
 }
