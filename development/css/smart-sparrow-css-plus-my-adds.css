@@ -682,3 +682,12 @@ body {
 .nc-text-button span:hover {
     border-bottom: none !important;
 }
+
+.nc-title-slide h1 span {
+  line-height: 1.09;
+}
+
+/* rotates the text on the Dairy Learning Center Polaroid */
+.nc-dairy-center-label {
+  transform: rotate(-.7deg);
+}
