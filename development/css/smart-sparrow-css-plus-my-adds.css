@@ -699,3 +699,9 @@ body {
 .nc-dairy-center-label {
   transform: rotate(-.7deg);
 }
+
+
+/* Smart Sparrow brings images forward, covering the progress bar, even when reordered. This sets the z-index of the progress bar so that it is always the most forward layered object on the screen */
+#ProgressBar {
+  z-index: 999999;
+}
