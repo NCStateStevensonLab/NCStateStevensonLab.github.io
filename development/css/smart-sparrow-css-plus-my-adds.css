@@ -687,6 +687,14 @@ body {
   line-height: 1.09;
 }
 
+/* Simulates a button for text that needs to be in italics. The current Smart Sparrow button element does not support italics. In-text links can only link out to other webpages and cannot link to internal screens. The work-around is to place a transparent button element (linked to an internal screen) in front of styled, button-looking text. Note: with the active button on top and Smart Sparrow's (2018) component structure, it is not possible to style the underlying text on a hover or active button state. */
+.nc-text-emulates-button {
+  background: #cc0000 !important;
+  color: #FFF;
+  padding: 1% 0 !important;
+  border-radius: 4px;
+}
+
 /* rotates the text on the Dairy Learning Center Polaroid */
 .nc-dairy-center-label {
   transform: rotate(-.7deg);
