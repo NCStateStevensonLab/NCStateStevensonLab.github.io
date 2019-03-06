@@ -706,7 +706,7 @@ body {
   z-index: 99 !important;
 }
 
-/* Removes the default hover state on text links */
-.nc-text-button {
+/* Removes the default hover state on text links that are not styled as buttons */
+.nc-text-link {
   border-bottom: none;
 }
