@@ -736,3 +736,7 @@ body {
 .nc-2-para-fb p:nth-of-type(2) {
   display: none !important;
 }
+
+#stage-feedback div div div p:nth-of-type(2) {
+  display: none !important;
+}
