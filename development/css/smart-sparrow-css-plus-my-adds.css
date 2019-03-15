@@ -724,7 +724,15 @@ body {
   background-color: #F2F2F2;
 }
 
-/* Add icon for menu completion status */
+/* Add icon for menu completion status */ 
 .nc-course-preview-icon {
   
+}
+
+
+/* After the first paragraph of adaptive feedback, Smart Sparrow adds a p tag element before the next paragraph. This is to counter that addition */
+
+/* For 2-paragraph adaptive feedback */
+.nc-2-para-fb p:nth-of-type(2) {
+  display: none !important;
 }
