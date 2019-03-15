@@ -740,3 +740,7 @@ body {
 #stage-feedback div div div p:nth-of-type(2) {
   display: none !important;
 }
+
+#stage-feedback div div div p:nth-of-type(2):before {
+  content: '/A';
+}
