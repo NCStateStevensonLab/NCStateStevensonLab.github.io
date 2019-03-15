@@ -744,3 +744,8 @@ body {
 #stage-feedback div div div p:nth-of-type(2):before {
   content: '/A';
 }
+
+/* Reduces the indentation for bullet list */
+.nc-bullet-list li {
+  padding-left: 0 !important;
+}
