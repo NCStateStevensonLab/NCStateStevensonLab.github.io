@@ -749,3 +749,8 @@ body {
 .nc-bullet-list li {
   padding-left: 0 !important;
 }
+
+/* Try to effect a change to the learnspace container */
+.lesson-iframe-close-text::after {
+    content: ' to learnspace';
+}
