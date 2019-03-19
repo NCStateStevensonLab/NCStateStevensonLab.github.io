@@ -754,3 +754,20 @@ body {
 .lesson-iframe-close-text::after {
     content: ' to learnspace';
 }
+
+/* Set colors for Lesson 3 Zone Zones */
+.zone4PopOver {
+  background-color: #4156A1 !important;
+}
+
+.zone3PopOver {
+  background-color: #427E93 !important;
+}
+
+.zone2PopOver {
+  background-color: #D14905 !important;
+}
+
+.zone1PopOver {
+  background-color: #990000 !important;
+}
