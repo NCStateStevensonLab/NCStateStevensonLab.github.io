@@ -457,7 +457,9 @@ body {
 {
   content: '';
   position: absolute;
-  top: 0;
+/*  top: 0;*/
+/* Top needs to be 2px (to prevent overlay over border) because speech bubble border is 2px */
+  top: 2px;
   width: 25px;
 /*  height: 100%;*/
   /* need to set the height to less than 100% so it does not overlap the edges of the text box [a hard to identify, intermediate problem depending on the size of the text boxes after rendering] */
