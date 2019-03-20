@@ -751,7 +751,7 @@ body {
 
 /* Reduces the indentation for bullet list */
 .nc-bullet-list li {
-  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* Try to effect a change to the learnspace container */
