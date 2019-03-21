@@ -471,14 +471,14 @@ body {
 .speech-bubble-left:after,
 .speech-bubble-left-center:after,
 .speech-bubble-left-bottom:after {
-  left: 1px;
+  left: 0;
 }
 
 /* Prevent ::after element from overlaying right border when speech bubble tongue is on right side */
 .speech-bubble-right:after,
 .speech-bubble-right-center:after,
 .speech-bubble-right-bottom:after {
-  right: 1px;
+  right: 0;
 }
 
 .speech-bubble-bottom:after,
