@@ -1,0 +1,808 @@
+/* CSS for Environmental Monitoring Course powered by Smart Sparrow */
+
+/* BEGIN Smart Sparrow Delivered CSS */
+
+body {
+  font-family: 'Arial', sans-serif
+}
+
+.headerContainer {
+  background: #cc0000
+}
+
+@media (min-width:701px) {
+  .headerContainer .defaultView:before {
+    content: '';
+    display: block;
+    width: 145px;
+    height: 37px;
+    border-right: 1px solid #fff;
+    margin-right: 14px;
+    background: url('../assets/ncsu-logo.png') no-repeat center;
+    background-size: 152px 45px
+  }
+}
+
+.headerContainer .lessonTitle {
+  font-style: italic;
+  font-weight: 600;
+  color: #fff
+}
+
+.headerContainer .lessonTitle:before {
+  content: 'Environmental Monitoring in the Dairy Industry';
+  display: block;
+  font-style: normal
+}
+
+@media (max-width:900px) {
+  .headerContainer .lessonTitle:before {
+    font-size: 14px
+  }
+}
+
+@media (max-width:700px) {
+  .headerContainer .lessonTitle:before {
+    display: none
+  }
+}
+
+.theme-header-beagle__toggle,
+.theme-header-profile__toggle {
+  background: none
+}
+
+.theme-header-score,
+.theme-header-beagle__label,
+.theme-header-profile__label {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9)
+}
+
+@media (max-width:700px) {
+  .theme-header-score__label {
+    display: none
+  }
+}
+
+.theme-header-score__icon {
+  background: url('../assets/icons/icon-star.svg')
+}
+
+.theme-header-beagle__icon {
+  background: url('../assets/icons/icon-apps.svg')
+}
+
+.theme-header-profile__icon {
+  background: url('../assets/icons/icon-account.svg')
+}
+
+.theme-history .history-element-selected .history-element__screenName {
+  color: #cc0000
+}
+
+#stage-stage .number-input input,
+#stage-stage .short-text-input input {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .number-input input:focus,
+#stage-stage .short-text-input input:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .number-input input:disabled,
+#stage-stage .short-text-input input:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .long-text-input textarea {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .long-text-input textarea:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .long-text-input textarea:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .dropdown-input select,
+#stage-stage .boolean-input select {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .dropdown-input select:focus,
+#stage-stage .boolean-input select:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .dropdown-input select:disabled,
+#stage-stage .boolean-input select:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .slider-input .ui-slider-handle {
+  background: #cc0000
+}
+
+#stage-stage .slider-input .ui-slider-handle:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:checked + label::before {
+  box-shadow: inset 0 0 0 20px #cc0000
+}
+
+#stage-stage .mcq-input input:focus + label::before {
+  box-shadow: inset 0 0 0 2px #cc0000, 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:checked:focus + label::before {
+  box-shadow: inset 0 0 0 20px #cc0000, 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:disabled + label::before {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+.modal-footer button[name="OK"] {
+  background-color: #cc0000 !important
+}
+
+.modal-footer button[name="OK"]:hover {
+  background-color: #900 !important
+}
+
+.modal-footer button[name="OK"]:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.modal-footer button[name="CANCEL"] {
+  color: #cc0000 !important
+}
+
+.modal-footer button[name="CANCEL"]:hover {
+  background-color: rgba(204, 0, 0, 0.1) !important
+}
+
+.modal-footer button[name="CANCEL"]:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.info-icon:not(.no-restyle) {
+  background-color: #cc0000 !important
+}
+
+.info-icon:not(.no-restyle).no-close .close {
+  display: none
+}
+
+.background {
+  background-color: #f2f2f2
+}
+
+.stageContainer .content {
+  border-color: #ccc
+}
+
+.stageContainer .content span,
+.stageContainer .content strong,
+.stageContainer .content em {
+  font-family: 'Arial', sans-serif !important
+}
+
+.checkContainer {
+  border-color: #ccc
+}
+
+.checkContainer .checkBtn,
+.checkContainer .closeFeedbackBtn {
+  background: #cc0000 !important
+}
+
+.checkContainer .checkBtn:hover,
+.checkContainer .closeFeedbackBtn:hover,
+.checkContainer .checkBtn:focus,
+.checkContainer .closeFeedbackBtn:focus,
+.checkContainer .checkBtn:active,
+.checkContainer .closeFeedbackBtn:active {
+  background: #900 !important
+}
+
+.checkContainer .checkBtn:focus,
+.checkContainer .closeFeedbackBtn:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.feedbackContainer .toggleFeedbackBtn .icon::before {
+  background: url('../assets/icons/icon-feedback.svg')
+}
+
+.no-tray .checkContainer {
+  display: none
+}
+
+.speech-bubble-left,
+.speech-bubble-right {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important
+}
+
+.speech-bubble-left:before,
+.speech-bubble-right:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left:after,
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 100%;
+  background: inherit
+}
+
+@media (max-width:900px) {
+
+  .speech-bubble-left:before,
+  .speech-bubble-right:before,
+  .speech-bubble-left:after,
+  .speech-bubble-right:after {
+    display: none
+  }
+}
+
+/* N added left-center to core SS code */
+.speech-bubble-left:before,
+.speech-bubble-left-center:before,
+.speech-bubble-left-bottom:before {
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
+}
+
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
+  left: 0
+}
+
+.speech-bubble-right:before,
+.speech-bubble-right-center:before,
+.speech-bubble-right-bottom:before {
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(135deg) skew(10deg, 10deg);
+  transform: translateX(50%) rotate(135deg) skew(10deg, 10deg)
+}
+
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
+  right: 0
+}
+
+/* END Smart Sparrow CSS */
+
+/* BEGIN Custom CSS */
+
+/* Add animation speeds excluded from animate.css */
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* end add animation speeds */
+
+
+.content {
+  overflow: hidden;
+}
+
+.speech-bubble-left,
+.speech-bubble-left-center,
+.speech-bubble-left-bottom,
+.speech-bubble-right,
+.speech-bubble-right-center,
+.speech-bubble-right-bottom,
+.speech-bubble-bottom,
+.speech-bubble-bottom-left,
+.speech-bubble-bottom-right {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
+}
+
+.speech-bubble-left:before,
+.speech-bubble-right:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender centered on bottom of bubble*/
+.speech-bubble-bottom:before {
+  content: '';
+  position: absolute;
+  left: 44%;
+/*  top: 93%;*/
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 7.5%;*/
+  left: calc(100% - 319px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 83%;*/
+  left: calc(100% - 58px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* The default speech bubble aside hangs from the top of the speech bubble  This centers speech bubble on left frame to create greater flexablity*/
+.speech-bubble-left-center:before,
+.speech-bubble-right-center:before {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left-bottom:before,
+.speech-bubble-right-bottom:before {
+  content: '';
+  position: absolute;
+  top: 71px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after,
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after
+{
+  content: '';
+  position: absolute;
+/*  top: 0;*/
+/* Top needs to be 2px (to prevent overlay over border) because speech bubble border is 2px */
+  top: 2px;
+  width: 25px;
+/*  height: 100%;*/
+  /* need to set the height to less than 100% so it does not overlap the edges of the text box [a hard to identify, intermediate problem depending on the size of the text boxes after rendering] */
+  height: 98%;
+  background: inherit
+}
+
+/* Prevent ::after element from overlaying left border when speech bubble tongue is on left side */
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
+  left: 0;
+}
+
+/* Prevent ::after element from overlaying right border when speech bubble tongue is on right side */
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
+  right: 0;
+}
+
+.speech-bubble-bottom:after,
+.speech-bubble-bottom-left:after,
+.speech-bubble-bottom-right:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  background: inherit
+}
+
+
+
+/* Floor Drain Image Text Rotation */
+.nicheFolderLeftImageText {
+  transform: rotate(3.7deg);
+}
+
+/* Conveyer Belts Image Text Rotation */
+.nicheFolderRightImageText {
+  transform: rotate(-2.5deg);
+}
+
+/*Dairy Learning Center Image */
+.singleImageText {
+  transform: rotate(-1deg);
+}
+
+/* Add shorter duration classes */
+.delay-0-5 {
+  animation-delay: 0.5s
+}
+
+.delay-1-5 {
+  animation-delay: 1.5s
+}
+
+
+/* Add custom popup style for Fat Tom interactive */
+.FatTomPopup {
+  height: 400px;
+  margin-top: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.FatTomPopup div {
+  border-radius: 0;
+}
+
+/* Add custom style for carousel */
+.carousel-wide .owl-carousel .owl-item .slide img {
+  max-height: 80vH;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+  
+.owl-carousel .owl-nav .owl-prev {
+  margin-left: 5px;
+  text-indent: -9999px;
+  line-height: 0;
+  margin-top: -30%;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  margin-left: 5px;
+  text-indent: -9999px;
+  line-height: 0;
+  margin-top: -30%;
+}
+
+.owl-prev::after {
+  font-size: 300px;
+  color: red;
+  content: "<";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.owl-next::after {
+  font-size: 300px;
+  color: red;
+  content: ">";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+
+/* Add star icon for showing progress */
+.starIconToggle #stage-stage .mcq-input input[type=radio]+label:after {    
+  content: '';
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+  transform: scale(.4) translate(-50%, -50%);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -1px;
+  opacity: 0;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+  background-size: 40rem;
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  height: 60px;
+  width: 60px;
+  z-index: 999;
+  background-size: cover;
+}
+
+ .starIconToggle input:checked + label::before {    
+  content: '';
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+  transform: scale(.4) translate(-50%, -50%);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -1px;
+  opacity: 0;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
+  height: 60px;
+  width: 60px;
+  z-index: 999;
+  background-size: cover;
+}
+
+#stage-stage .starIconToggle input:checked + label::before {    
+    content: '';
+    transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+    transform: scale(.4) translate(-50%, -50%);
+    transform-origin: top left;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -1px;
+/*    opacity: 0;*/
+/*
+    background: #ffffff;
+    border: 2px solid #ffffff;
+*/
+    background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
+    height: 60px;
+    width: 60px;
+    z-index: 999;
+    background-size: cover;
+}
+
+/* Hides Google Spreadsheet Footer Link */
+.iframe-spreadsheet {
+  height: 37rem !important;
+}
+
+/* Adds padding to text box */
+.pad-text {
+  padding: 2% 0 0 2.3% !important;
+  width: calc(44.6%) !important;
+}
+
+
+.flashcard-hover:hover ~ .flashcard {
+  -webkit-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  -moz-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+}
+
+.nc-flashcard {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+/* Sets custom text button. Text color comes from text box style */
+.nc-text-button {
+  border-radius: 0;
+}
+
+.nc-text-button a {
+  text-decoration:none !important;
+  display: block !important;
+  padding: 10px 0 !important;
+  background: #CC0000;
+  border-radius: 4px;
+  color: #FFF;
+}
+
+.nc-text-button a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: none !important;
+  background: #900;
+  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
+}
+
+.nc-text-button span:hover {
+  border-bottom: none !important;
+}
+
+.nc-title-slide h1 span {
+  line-height: 1.09;
+}
+
+/* Simulates a button for text that needs to be in italics. The current Smart Sparrow button element does not support italics. In-text links can only link out to other webpages and cannot link to internal screens. The work-around is to place a transparent button element (linked to an internal screen) in front of styled, button-looking text. Note: with the active button on top and Smart Sparrow's (2018) component structure, it is not possible to style the underlying text on a hover or active button state. */
+.nc-text-emulates-button {
+  background: #cc0000 !important;
+  color: #FFF;
+  padding: 1% 0 !important;
+  border-radius: 4px;
+}
+
+/* rotates the text on the Dairy Learning Center Polaroid */
+.nc-dairy-center-label {
+  transform: rotate(-.7deg);
+}
+
+
+/* Smart Sparrow brings images forward, covering the progress bar, even when reordered. This sets the z-index of the progress bar so that it is always the most forward layered object on the screen */
+#ProgressBar {
+  z-index: 99 !important;
+}
+
+/* Removes the default hover state on text links that are not styled as buttons */
+.nc-text-link {
+  border-bottom: none;
+}
+
+/* Add grayscale filter */
+.nc-grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+/* Add course preview menu as textbox */
+.nc-course-preview-menu {
+  padding: 5%;
+  border-radius: 4%;
+  background-color: #F2F2F2;
+}
+
+/* Add icon for menu completion status */ 
+.nc-course-preview-icon {
+  
+}
+
+
+/* After the first paragraph of adaptive feedback, Smart Sparrow adds a p tag element before the next paragraph. This is to counter that addition */
+
+/* For 2-paragraph adaptive feedback */
+.nc-2-para-fb p:nth-of-type(2) {
+  display: none !important;
+}
+
+#stage-feedback div div div p:nth-of-type(2) {
+  display: none !important;
+}
+
+#stage-feedback div div div p:nth-of-type(2):before {
+  content: '/A';
+}
+
+/* Reduces the indentation for bullet list */
+.nc-bullet-list li {
+  margin-left: 0 !important;
+}
+
+/* Try to effect a change to the learnspace container */
+.lesson-iframe-close-text::after {
+    content: ' to learnspace';
+}
+
+/* Set colors for Lesson 3 Zone Zones */
+.zone4PopOver {
+  background-color: #4156A1 !important;
+}
+
+.zone3PopOver {
+  background-color: #427E93 !important;
+}
+
+.zone2PopOver {
+  background-color: #D14905 !important;
+}
+
+.zone1PopOver {
+  background-color: #990000 !important;
+}
+
+/* Test to see if can effect change in button */
+.testButton button {
+  background: purple !important;
+}
+
+.image-with-sidebar-info-popup div {
+  box-shadow: none;
+  border: 1px solid #FFF !important;
+  animation: 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal none running info-popup-sidebar;
+}
+
+@keyframes info-popup-sidebar 
+0% { transform: scale(0.4); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
