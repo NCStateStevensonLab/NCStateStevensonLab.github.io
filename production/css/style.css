@@ -800,9 +800,23 @@ body {
 .info-popup-sidebar {
   box-shadow: none;
   border: 1px solid #FFF !important;
+  border-radius: 0;
   animation: 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal none running info-popup-sidebar !important;
 }
 
+/*
 @keyframes info-popup-sidebar 
 0% { transform: scale(0.4); opacity: 0; }
 100% { transform: scale(1); opacity: 1; }
+*/
+
+@keyframes info-popup-sidebar {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
