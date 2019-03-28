@@ -800,8 +800,8 @@ body {
 .info-popup-sidebar {
   box-shadow: none;
   border: 1px solid #FFF !important;
-  border-radius: 0;
-  animation: 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal none running info-popup-sidebar !important;
+  border-radius: 0 !important;
+  animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal none running info-popup-sidebar !important;
 }
 
 .info-popup-sidebar[aria-hidden="true"] {
@@ -809,7 +809,7 @@ body {
   border: 1px solid #FFF !important;
   border-radius: 0 !important;
   /* @keyframes duration | timing-function | delay |iteration-count | direction | fill-mode | play-state | name */
-  animation: 0.3s cubic-bezier(0.2, 1, 0.4, 0) 0s 1 normal none running info-popup-sidebar-close !important;
+  animation: 0.5s cubic-bezier(0.2, 1, 0.4, 0) 0s 1 normal none running info-popup-sidebar-close !important;
 }
 
 /*
