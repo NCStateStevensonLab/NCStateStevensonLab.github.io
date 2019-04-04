@@ -6,10 +6,6 @@
 /*  color: #FFF;*/
 }
 
-.tab-button .button.selected:before, .button.waiting:before{
-  display: none !important;
-}
-
 .tab-button-1 {
   background: teal;
   border-radius: 20px;
