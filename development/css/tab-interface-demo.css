@@ -6,6 +6,11 @@
 /*  color: #FFF;*/
 }
 
+.tab-button-1 {
+  background: teal;
+  border-radius: 20px;
+}
+
 .tab-button-1::after {
   content: 'Resource 1';
   font-size: 30px;
@@ -34,5 +39,9 @@
   box-shadow: none;
   border: none !important;
   border: 5px solid #FFF !important;
+  border-radius: 0 !important;
+}
+
+.tab-popup div {
   border-radius: 0 !important;
 }
