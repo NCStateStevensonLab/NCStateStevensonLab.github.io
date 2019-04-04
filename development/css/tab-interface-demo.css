@@ -2,10 +2,20 @@
 
 .tab-button {
   padding: 5%;
+  background: steelblue;
+/*  color: #FFF;*/
 }
 
 .tab-button-1::after {
   content: 'Resource 1';
+  font-size: 30px;
+  color: orange;
+}
+
+.tab-button-1::before {
+  content: 'Resource 1';
+  font-size: 30px;
+  color: purple;
 }
 
 .tab-button-2::after {
@@ -21,7 +31,8 @@
 }
 
 .tab-popup {
+  box-shadow: none;
+  border: none !important;
+  border: 5px solid #FFF !important;
   border-radius: 0 !important;
-    box-shadow: none;
-    border: none !important;
 }
