@@ -7,7 +7,7 @@
 }
 
 .tab-button .button.selected:before, .button.waiting:before{
-  display: none;
+  display: none !important;
 }
 
 .tab-button-1 {
