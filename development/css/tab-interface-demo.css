@@ -1,0 +1,27 @@
+/* Tab Interface */
+
+.tab-button {
+  padding: 5%;
+}
+
+.tab-button-1::after {
+  content: 'Resource 1';
+}
+
+.tab-button-2::after {
+  content: 'Resource 2';
+}
+
+.tab-button-3::after {
+  content: 'Resource 3';
+}
+
+.tab-button-4::after {
+  content: 'Resource 4';
+}
+
+.tab-popup {
+  border-radius: 0 !important;
+    box-shadow: none;
+    border: none !important;
+}
