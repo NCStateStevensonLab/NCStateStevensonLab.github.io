@@ -1,0 +1,9 @@
+/* TEAM */
+
+/*
+Dr. Clint Stevenson NC State 
+Julie Yamamoto  Instrucitonal Designer
+Stephanie Maggio  Subject Matter Expert
+Nathaniel Powers Learning Technologist
+
+/* THANKS */
