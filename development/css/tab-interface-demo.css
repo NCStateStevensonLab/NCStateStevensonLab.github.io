@@ -11,30 +11,6 @@
   border-radius: 20px;
 }
 
-.tab-button-1::after {
-  content: 'Resource 1';
-  font-size: 30px;
-  color: orange;
-}
-
-.tab-button-1::before {
-  content: 'Resource 1';
-  font-size: 30px;
-  color: purple;
-}
-
-.tab-button-2::after {
-  content: 'Resource 2';
-}
-
-.tab-button-3::after {
-  content: 'Resource 3';
-}
-
-.tab-button-4::after {
-  content: 'Resource 4';
-}
-
 .tab-popup {
   box-shadow: none;
   border: none !important;
@@ -44,4 +20,14 @@
 
 .tab-popup div {
   border-radius: 0 !important;
+}
+
+.button.selected:before, 
+.button.waiting:before{
+  background: none !important;
+}
+
+.button.waiting {
+  color: #FFF;
+  opacity: 1;
 }
