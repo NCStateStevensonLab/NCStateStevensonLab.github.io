@@ -31,3 +31,9 @@
   color: #FFF;
   opacity: 1;
 }
+
+.button-multiline {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.5;
+}
