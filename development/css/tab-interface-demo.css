@@ -22,18 +22,26 @@
   border-radius: 0 !important;
 }
 
-.button.selected:before, 
-.button.waiting:before{
+.no-spin .button.selected:before, 
+.no-spin .button.waiting:before{
   background: none !important;
+  opacity: 0;
 }
 
+/*
 .button.waiting {
   color: #FFF;
   opacity: 1;
 }
+*/
 
-.button-multiline {
+.multiline-text-btn {
   white-space: normal;
   text-align: center;
   line-height: 1.5;
+}
+
+.no-spin .checkContainer .spricon-ajax-loader {
+  background: none !important;
+  opacity: 0;
 }
