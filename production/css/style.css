@@ -521,6 +521,33 @@ body {
   animation-delay: 1.5s
 }
 
+.delay-7 {
+  animation-delay: 7s
+}
+
+.delay-7-5 {
+  animation-delay: 7.5s
+}
+
+.delay-8 {
+  animation-delay: 8s
+}
+
+.delay-8-5 {
+  animation-delay: 8.5s
+}
+
+.delay-9 {
+  animation-delay: 9s
+}
+
+.delay-9-5 {
+  animation-delay: 9.5s
+}
+
+.delay-10 {
+  animation-delay: 10s
+}
 
 /* Add custom popup style for Fat Tom interactive */
 .FatTomPopup {
@@ -835,4 +862,9 @@ body {
 		opacity: 0;
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+.nc-rounded-labels {
+  border-radius: 50px;
+  border: 3px solid #333 !important;
 }
