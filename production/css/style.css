@@ -874,6 +874,10 @@ body {
   border-radius: 5px;
 }
 
+.nc-screen-text p {
+  padding: 1px 12px 1px 7px;
+}
+
 
 
 .nc-button-as-label:disabled {
