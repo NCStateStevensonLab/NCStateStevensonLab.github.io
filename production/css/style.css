@@ -873,3 +873,9 @@ body {
   padding: 6px;
   border-radius: 5px;
 }
+
+
+
+.nc-button-as-label:disabled {
+  opacity: 1 !important;
+}
