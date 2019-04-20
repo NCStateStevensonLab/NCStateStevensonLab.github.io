@@ -887,7 +887,7 @@ body {
 }
 
 .nc-screen-text p {
-  padding: 1px 12px 1px 7px;
+  padding: 1px 12px 1px 7px !important;
 }
 
 
