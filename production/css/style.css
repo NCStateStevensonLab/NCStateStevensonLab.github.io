@@ -904,9 +904,12 @@ body {
   padding: 0 !important;
   color: #333;
   letter-spacing: -.25px;
-  font-weight: 700 !important;
-  font-size: 13px !important;
   white-space: normal;
   transition: color .3s ease,background .3s ease,box-shadow .3s ease;
   padding: 11px !important;
+  width: auto;
+}
+
+.nc-fishbone-text-label span {
+  font-size: 14px !important;
 }
