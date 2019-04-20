@@ -896,7 +896,7 @@ body {
   opacity: 1 !important;
 }
 
-.nc-text-fishbone-label {
+.nc-fishbone-text-label {
   border: 4px solid #E0E0E0 !important;
   border-radius: 5px !important;
   background: #FFF !important;
@@ -904,9 +904,9 @@ body {
   padding: 0 !important;
   color: #333;
   letter-spacing: -.25px;
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 700 !important;
+  font-size: 13px !important;
   white-space: normal;
   transition: color .3s ease,background .3s ease,box-shadow .3s ease;
-  padding-top: 10% !important;
+  padding: 11px !important;
 }
