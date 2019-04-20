@@ -882,7 +882,7 @@ body {
 }
 
 .nc-screen-text {
-  padding: 6px;
+  padding: 6px !important;
   border-radius: 5px;
 }
 
@@ -925,5 +925,5 @@ body {
 .nc-contrast-textbox {
   padding: 20px !important;
   box-sizing: content-box;
-  overflow: visible !important
+  overflow: visible !important;
 }
