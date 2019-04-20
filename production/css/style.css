@@ -921,3 +921,9 @@ body {
 .nc-fishbone-blue {
   border-color: #4156A1 !important;
 }
+
+.nc-contrast-textbox {
+  padding: 20px !important;
+  box-sizing: content-box;
+  overflow: visible !important
+}
