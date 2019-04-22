@@ -758,12 +758,15 @@ body {
 
 .nc-txt-btn-primary {
   background: #CC0000 !important;
-  color: #FFF;
+  /* recommended color is #FFF, but should be set in Editor */
 }
 
 .nc-txt-btn-secondary {
   background: #FFF !important;
-  color: #CC0000;
+  /* recommended color is #CC0000, but should be set in Editor */
+  -webkit-box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
+  -moz-box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
+  box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
 }
 
 /* rotates the text on the Dairy Learning Center Polaroid */
