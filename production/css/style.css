@@ -942,3 +942,7 @@ body {
   box-sizing: content-box;
   overflow: visible !important;
 }
+
+.nc-wide-screen-title p span {
+  line-height: 1.05 !important;
+}
