@@ -962,18 +962,15 @@ body {
     background-repeat: no-repeat;
 }*/
 
-.feedbackContainer > ul {
-  padding-left: 0 !important;
-}
-
-.feedbackContainer > ul > li {
-  margin-left: 20px !important;
-}
-
 .feedbackContainer ul {
   padding-left: 0 !important;
 }
 
 .feedbackContainer ul li {
   margin-left: 20px !important;
+}
+
+/* Support audio transcript that is too long for screen height */
+.nc-audio-txt div {
+  overflow-x: scroll;
 }
