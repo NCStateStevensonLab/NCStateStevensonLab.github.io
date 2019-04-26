@@ -974,3 +974,8 @@ body {
 .nc-audio-txt div {
   overflow-x: scroll;
 }
+
+.nc-mcq label span {
+  font-size: 16px !important;
+}
+
