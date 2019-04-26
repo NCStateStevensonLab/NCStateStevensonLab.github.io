@@ -967,5 +967,13 @@ body {
 }
 
 .feedbackContainer > ul > li {
-  margin-left: 20px;
+  margin-left: 20px !important;
+}
+
+.feedbackContainer ul {
+  padding-left: 0 !important;
+}
+
+.feedbackContainer ul li {
+  margin-left: 20px !important;
 }
