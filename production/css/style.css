@@ -946,3 +946,26 @@ body {
 .nc-wide-screen-title p span {
   line-height: 1.05 !important;
 }
+
+
+/* See if this is applied over the base CSS */
+
+/*
+.info-icon-popup:not(.no-restyle) .close span {
+    background-repeat: no-repeat;
+    background: url(../assets/icon-close-dark.svg);
+    width: 18px !important;
+    height: 37px;
+    font-size: 0 !important;
+    margin: auto !important;
+    border-bottom: 0 !important;
+    background-repeat: no-repeat;
+}*/
+
+.feedbackContainer > ul {
+  padding-left: 0 !important;
+}
+
+.feedbackContainer > ul > li {
+  margin-left: 20px;
+}
