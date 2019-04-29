@@ -1017,3 +1017,9 @@ body {
   height: 75px !important;
   text-transform: none;
 }
+
+/*.button.selected:before, .button.waiting:before{   background: none !important; }  .button.waiting {   color: #FFF;   opacity: 1; } .button {   padding: 0 15px !important;   white-space: normal;   line-height: 1.5;   font-size: 13px;   height: 75px !important;   text-transform: none;}*/
+
+.nc-scroll {
+  overflow: scroll;
+}
