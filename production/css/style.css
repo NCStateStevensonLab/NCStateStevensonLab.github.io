@@ -992,10 +992,9 @@ body {
 }
 
 /* Styling for custom tabs-as-buttons layout */
-.nc-tab-btn {
+.nc-tab-btn .button {
   white-space: normal;
   line-height: 1.5;
   font-size: 12px;
   text-transform: none;
 }
-
