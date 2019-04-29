@@ -992,9 +992,28 @@ body {
 }
 
 /* Styling for custom tabs-as-buttons layout */
+/*
 .nc-tab-btn .button {
   white-space: normal;
   line-height: 1.5;
   font-size: 12px;
   text-transform: none;
+}
+*/
+
+/* Styling needs to be applied in the button CSS string: */
+.button.selected:before, .button.waiting:before{
+  background: none !important;
+} 
+.button.waiting {
+  color: #FFF;
+  opacity: 1;
+}
+.button {
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  text-transform: none;
+  padding: 0 15px;
+  height: 75px;
 }
