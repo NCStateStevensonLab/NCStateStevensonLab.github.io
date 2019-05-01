@@ -1040,9 +1040,8 @@ body {
 /* Class needs to be applied to the popup box itself */
 .close-x .close::before {
     content: "Close";
-    background-color: yellow; /* for testing */
-    color: #666;
-    font-weight: bold;
+/*    background-color: yellow;  for testing */
+    color: rgba(0,0,0,.8);
     padding-right: 60px;
     box-sizing: border-box;
     font-size: 14px;
