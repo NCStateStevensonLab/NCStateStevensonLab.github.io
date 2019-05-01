@@ -1033,7 +1033,7 @@ body {
 
 /* TEST */
 .close-btn-above {
-  z-index: 14;
+  z-index: 14 !important;
 }
 
 
