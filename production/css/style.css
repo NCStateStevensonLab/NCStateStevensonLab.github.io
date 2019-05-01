@@ -1024,3 +1024,18 @@ body {
 .nc-scroll div {
   overflow: scroll !important;
 }
+
+/* Content overflow visible */
+
+.stage-overflow-visible #stage-stage .content {
+  overflow: visible;
+}
+
+/* TEST */
+.close-btn-above {
+  z-index: 14;
+}
+
+
+
+
