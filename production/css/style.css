@@ -1042,12 +1042,17 @@ body {
     content: "Close";
 /*    background-color: yellow;  for testing */
     color: rgba(0,0,0,.8);
-    padding-right: 60px;
+/*    padding-right: 60px;*/
     box-sizing: border-box;
     font-size: 14px;
-    padding: 3px 64px 3px 4px;
+/*    padding: 3px 64px 3px 4px;*/
+    margin-right: 53px;
 }
 
 
+/* Add slide background screen overlay for full-screen modal */
+.modal-screen-dark {
+  background: rgba(0,0,0,.8);
+}
 
 
