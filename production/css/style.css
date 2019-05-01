@@ -1036,6 +1036,19 @@ body {
   z-index: 14 !important;
 }
 
+/* Add Close Text to popup dialog X */
+/* Class needs to be applied to the popup box itself */
+.close-x button.close::before {
+    content: "Close";
+    background-color: yellow; /* for testing */
+    color: #666;
+    font-weight: bold;
+    padding-right: 60px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 3px 64px 3px 4px;
+}
+
 
 
 
