@@ -1052,7 +1052,7 @@ body {
 
 /* Add slide background screen overlay for full-screen modal */
 .modal-screen-dark {
-  background: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.75) !important;
 }
 
 
