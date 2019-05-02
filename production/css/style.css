@@ -1089,8 +1089,14 @@ body {
     height: 30px; 
 }
 
+/* Align icons to left border */
 .resource-download-tooltip img {
   left: 8px !important;
+}
+
+/* Align text to left border */
+.resource-download-tooltip div div {
+  
 }
 
 
