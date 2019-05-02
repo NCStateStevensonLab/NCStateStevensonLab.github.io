@@ -1072,18 +1072,27 @@ body {
 .resource-download-tooltip:before {
   content: '';
   position: absolute;
-  left: 44%;
+/*  left: 44%;*/
 /*  top: 93%;*/
-  top: calc(100% - 14px);
+/*  top: calc(100% - 14px);*/
   transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
-  width: 30px;
-  height: 30px;
+/*  width: 30px;*/
+/*  height: 30px;*/
   -webkit-transform-origin: center;
   transform-origin: center;
   background: inherit;
   border-left: inherit;
-  border-top: inherit
+  border-top: inherit;
+    left: 62px;
+    top: calc(100% - 15px);
+    width: 30px;
+    height: 30px; 
 }
+
+.resource-download-tooltip img {
+  left: 8px !important;
+}
+
 
 /*
 .resource-download-tooltip:before {
