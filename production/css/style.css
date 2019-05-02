@@ -1079,10 +1079,12 @@ body {
   border-top: inherit
 }
 
+/*
 .resource-download-tooltip:before {
   left: 0;
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
 }
+*/
 
 
