@@ -807,6 +807,7 @@ body {
 /* After the first paragraph of adaptive feedback, Smart Sparrow adds a p tag element before the next paragraph. This is to counter that addition */
 
 /* For 2-paragraph adaptive feedback */
+/*
 .nc-2-para-fb p:nth-of-type(2) {
   display: none !important;
 }
@@ -818,6 +819,7 @@ body {
 #stage-feedback div div div p:nth-of-type(2):before {
   content: '/A';
 }
+*/
 
 /* Reduces the indentation for bullet list */
 .nc-bullet-list li {
@@ -1089,14 +1091,16 @@ body {
     height: 30px; 
 }
 
+/* Since there isn't enough fidelity in the popup box (Unlike the main text editor, there isn't a way set precise length and width. Instead, elements can only be dragged, which snap at undesired intervals). I am targeting the divs containing the paragraph and image icons to align them to the left margin. */
+
 /* Align icons to left border */
 .resource-download-tooltip img {
-  left: 8px !important;
+  left: 11px !important;
 }
 
 /* Align text to left border */
 .resource-download-tooltip div div {
-  
+  left: 45px;
 }
 
 
