@@ -1112,4 +1112,9 @@ body {
 }
 */
 
+/* Remove the default inline-block property on paragraph elements in the feedback so paragraph breaks in the Editor will be correctly interpreted. */
+.feedbackContainer .content p {
+  display: block !important;
+}
+
 
