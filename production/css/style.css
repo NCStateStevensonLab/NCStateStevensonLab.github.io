@@ -1055,4 +1055,34 @@ body {
   background: rgba(0,0,0,.75) !important;
 }
 
+.resource-download-tooltip {
+  padding: 0 !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
+}
+
+.resource-download-tooltip:before {
+  content: '';
+  position: absolute;
+  left: 44%;
+/*  top: 93%;*/
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.resource-download-tooltip:before {
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
+}
+
 
