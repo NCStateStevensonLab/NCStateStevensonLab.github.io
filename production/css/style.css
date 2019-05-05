@@ -1118,3 +1118,40 @@ body {
 }
 
 
+
+/* Smart Sparrow uses this code on their final screen 'finished lesson' modal. It makes a clear close button 
+
+.modal .close {
+    background: url(../assets/icon-close-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    transition: all .3s ease;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    top: -10px;
+    right: -10px;
+    font-size: 0;
+}
+
+.modal .close:after {
+    content: '';
+    transition: all .3s ease;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+*/
+
+/* Add a gradient to fade out content below the fold set by the lesson navigation */
+.checkContainer {
+  background: linear-gradient(to bottom, rgba(255,255,255,.93) 0%,rgba(255,255,255,.96) 39%,rgba(255,255,255,1) 100%) !important;
+}
