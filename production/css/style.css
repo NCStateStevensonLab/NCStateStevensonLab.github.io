@@ -1156,12 +1156,19 @@ body {
   background: linear-gradient(to bottom, rgba(255,255,255,.93) 0%,rgba(255,255,255,.96) 39%,rgba(255,255,255,1) 100%) !important;
 }
 
+/*
 iframe#Welcome_audioPlayer_Walter_Intro {
-/*  visibility: hidden !important;*/
+  visibility: hidden !important;
+  display: none !important;
+}
+*/
+
+.Walter-meet-audio {
   display: none !important;
 }
 
-#Welcome_infoIcon_Walter_PopUp[aria-haspopup="true"] #Welcome_audioPlayer_Walter_Intro {
+#Welcome_infoIcon_Walter_PopUp[aria-haspopup="true"] .Walter-meet-audio {
+/*  visibility: visible !important;*/
 /*  visibility: visible !important;*/
   display: block !important;
 }
