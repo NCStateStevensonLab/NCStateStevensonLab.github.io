@@ -1156,7 +1156,7 @@ body {
   background: linear-gradient(to bottom, rgba(255,255,255,.93) 0%,rgba(255,255,255,.96) 39%,rgba(255,255,255,1) 100%) !important;
 }
 
-#Welcome_audioPlayer_Walter_Intro {
+iframe#Welcome_audioPlayer_Walter_Intro {
   visibility: hidden !important;
 }
 
