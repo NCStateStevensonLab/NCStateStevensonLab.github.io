@@ -1157,10 +1157,12 @@ body {
 }
 
 iframe#Welcome_audioPlayer_Walter_Intro {
-  visibility: hidden !important;
+/*  visibility: hidden !important;*/
+  display: none !important;
 }
 
 #Welcome_infoIcon_Walter_PopUp[aria-haspopup="true"] #Welcome_audioPlayer_Walter_Intro {
-  visibility: visible !important;
+/*  visibility: visible !important;*/
+  display: block !important;
 }
 
