@@ -988,6 +988,10 @@ body {
   font-size: 16px !important;
 }
 
+#stage-stage .mcq-input label span {
+    font-size: 16px !important;
+}
+
 /* Default text does not wrap and is visibly truncated by the button. This class wraps the text to as many lines as needed. */
 .nc-wrap-btn {
   white-space: normal;
