@@ -974,7 +974,7 @@ body {
 
 /* Support audio transcript that is too long for screen height */
 .nc-audio-txt div {
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 /* doesn't override master 
