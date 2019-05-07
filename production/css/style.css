@@ -1180,3 +1180,13 @@ iframe#Welcome_audioPlayer_Walter_Intro {
 #Welcome_audioPlayer_Walter_Intro {
   background-color: lime !important;
 }
+
+.starburst-positive-label {
+  padding: 5px !important;
+  background: rgba(0,0,0,.75);
+}
+
+.starburst-labels p {
+  padding: 5px !important;
+  background: rgba(0,0,0,.75);
+}
