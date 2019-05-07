@@ -1180,6 +1180,7 @@ iframe#Welcome_audioPlayer_Walter_Intro {
 #Welcome_audioPlayer_Walter_Intro {
   background-color: lime !important;
 }
+/*
 
 .starburst-positive-label {
   padding: 5px !important;
@@ -1189,4 +1190,21 @@ iframe#Welcome_audioPlayer_Walter_Intro {
 .starburst-labels p {
   padding: 5px !important;
   background: rgba(0,0,0,.75);
+}
+*/
+
+.starburst-positive-label {
+  padding: 5px 2px !important;
+  background: rgba(0,0,0,.75) !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: 3px solid #FDD726 !important;
+}
+
+.starburst-label {
+  padding: 5px 2px !important;
+  background: rgba(0,0,0,.75) !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: 3px solid #222 !important;
 }
