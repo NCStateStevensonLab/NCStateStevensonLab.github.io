@@ -3,6 +3,7 @@
 .consent-txt-scroll {
   overflow: scroll;
   max-height: 445px;
+  padding: 20px;
 }
 
 /* BEGIN Smart Sparrow Delivered CSS */
