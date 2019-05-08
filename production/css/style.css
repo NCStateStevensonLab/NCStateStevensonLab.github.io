@@ -978,9 +978,19 @@ body {
 }
 
 /* Support research consent form scroll so buttons can be visible at the bottom without scrolling the screen */
-#stage-stage .content .consent-txt-scroll {
+#stage-stage .content div.consent-txt-scroll {
   height: 445px !important;
   overflow: scroll !important;
+  background: steelblue;
+}
+
+.consent-txt-scroll {
+  overflow: scroll;
+  max-height: 445px;
+}
+
+.consent-txt-scroll p {
+  color: red;
 }
 
 /* doesn't override master 
