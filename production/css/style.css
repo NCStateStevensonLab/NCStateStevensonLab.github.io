@@ -979,8 +979,8 @@ body {
 
 /* Support research consent form scroll so buttons can be visible at the bottom without scrolling the screen */
 .consent-txt-scroll {
-  height: 445px;
-  overflow: scroll;
+  height: 445px !important;
+  overflow: scroll !important;
 }
 
 /* doesn't override master 
