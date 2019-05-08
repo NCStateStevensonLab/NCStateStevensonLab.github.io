@@ -977,6 +977,12 @@ body {
   overflow: scroll !important;
 }
 
+/* Support research consent form scroll so buttons can be visible at the bottom without scrolling the screen */
+.consent-txt-scroll {
+  height: 445px;
+  overflow: scroll;
+}
+
 /* doesn't override master 
 .nc-mcq label span {
   font-size: 16px !important;
@@ -1207,4 +1213,49 @@ iframe#Welcome_audioPlayer_Walter_Intro {
   width: auto !important;
   border-radius: 10px;
   border: 2px solid #FDD726 !important;
+}
+
+.qa-number {
+  position: absolute;
+  left: 34px;
+}
+
+.qa-question {
+  
+}
+
+.qa-direction {
+  
+}
+
+.qa-likert-scale {
+  
+}
+
+.qa-likert-eu {
+  
+}
+
+.qa-likert-mu {
+  
+}
+
+.qa-likert-su {
+  
+}
+
+.qa-likert-nue {
+  
+}
+
+.qa-likert-se {
+  
+}
+
+.qa-likert-me {
+  
+}
+
+.qa-likert-ee {
+  
 }
