@@ -1,0 +1,14 @@
+.button.selected:before, .button.waiting:before {
+    content: 'Disagree' !important;
+    color: #FFF !important;
+    top: 0;
+    left: 0;
+    padding: 0 15px !important;
+    white-space: normal;
+    line-height: 1.5;
+    font-size: 13px;
+    /* background: #CC0000 !important; */
+    text-transform: none;
+    position: relative;
+    text-align: center;
+}

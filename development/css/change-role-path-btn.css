@@ -1,0 +1,31 @@
+/* Black Text on White Button as secondary button for changing role path on Welcome lesson */
+
+.button.selected:before,
+.button.waiting:before {
+  background: none !important;
+}
+
+.button.waiting {
+  color: #222;
+  opacity: 1;
+}
+
+.button {
+  padding: 0 15px !important;
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  background: #FFF !important;
+  text-transform: none;
+  border: 1px solid #222;
+  font-size: 15px;
+}
+
+.button.selected,
+.button:focus,
+.button:hover,
+.button:active,
+.button:disabled:hover {
+  background-color: #990000 !important;
+  color: #FFF !important;
+}

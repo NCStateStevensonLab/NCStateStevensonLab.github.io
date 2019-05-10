@@ -1,0 +1,14 @@
+.finishedDialog .modal-body::after {
+    content: "Congratulations, you completed this lesson!";
+    transform: rotate(0);
+    position: absolute;
+    top: 24px;
+    left: 55px;
+    width: auto;
+    width: 250px;
+    background: #FFF;
+    border: 2px solid rgb(0, 151, 167) !important;
+    padding-top: 6px;
+    font-weight: 600;
+    color: rgb(0, 151, 149) !important;
+}
