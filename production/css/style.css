@@ -1276,20 +1276,37 @@ iframe#Welcome_audioPlayer_Walter_Intro {
   
 }
 
+/* Adds a line beneath the Hello UsersName
+credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
+.user-info h2 {
+  overflow: hidden;
+  position: relative;
+}
+
 .user-info h2::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 0.5em;
-  border-top: 4px solid black;
   z-index: -1;
   width: 333px;
+  width: 70%;
+  height: 4px;
+  background: #222;  
 }
 
+/* nth-of-type cannot be used in this configuration. Instead I need nth-child(). Since Smart Sparrow uses the p tag between lines, I expected to be targeting the 3rd line, but because of the two line breaks in there, it is actually the fifth line. Note: If the line breaks are changed, then the style needs to be updated. See below
 .user-info p:nth-of-type(3) {
   margin: 20px 0;
   padding: 25px;
   background: #EEE;
+}
+*/
+
+.user-info p:nth-child(5) {
+  padding: 20px !important;
+  background-color: #EEE;
+  max-width: 70%;
+  border-radius: 5px;
 }
