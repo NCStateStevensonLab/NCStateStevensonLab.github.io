@@ -1,4 +1,4 @@
-.user-info {
+#stage-stage .content .user-info {
   background: lightblue;
 }
 
@@ -20,4 +20,11 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   width: 70% !important;
   height: 4px !important;
   background: #222 !important;  
+}
+
+#stage-stage .content .user-info p:nth-child(4) {
+  padding: 20px !important;
+  background-color: #EEE !important;
+  max-width: 70% !important;
+  border-radius: 5px !important;
 }
