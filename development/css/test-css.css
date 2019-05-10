@@ -1,0 +1,23 @@
+.user-info {
+  background: lightblue;
+}
+
+/* Adds a line beneath the Hello UsersName
+credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
+#stage-stage .content .user-info h2 {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+#stage-stage .content .user-info h2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: -1 !important;
+  width: 333px !important;
+  width: 70% !important;
+  height: 4px !important;
+  background: #222 !important;  
+}
