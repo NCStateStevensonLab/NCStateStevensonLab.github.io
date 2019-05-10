@@ -1276,6 +1276,10 @@ iframe#Welcome_audioPlayer_Walter_Intro {
   
 }
 
+.user-info {
+  background: lightblue;
+}
+
 /* Adds a line beneath the Hello UsersName
 credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 #stage-stage .content .user-info h2 {
