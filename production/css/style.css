@@ -1326,3 +1326,24 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   border-radius: 10px;
   border: 2px solid #222 !important;
 }
+
+.abc-list > p > span:nth-of-type(3) {
+  line-height: 70%;
+}
+
+
+
+.meet-char-heading,
+.meet-char-p {
+  background: rgba(0,0,0,.1);
+  padding: 2%;
+}
+
+.meet-char-heading,
+  padding: 2% 0 0 0;
+}
+
+
+.meet-char-p {
+  padding: 2%;
+}
