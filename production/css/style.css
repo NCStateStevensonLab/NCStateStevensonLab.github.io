@@ -1335,20 +1335,19 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 
 .meet-char-heading,
 .meet-char-p {
-  background: rgba(0,0,0,.1);
-  padding: 2%;
+  background: rgba(0,0,0,.1) !important;
 }
 
-.meet-char-heading,
-  padding: 2% 0 0 0;
+.meet-char-heading {
+  padding: 2% 0 0 0 !important;
 }
 
 
 .meet-char-p {
-  padding: 2%;
+  padding: 2% !important;
 }
 
 
 .meet-characters-popover {
-  opacity: .97;
+  opacity: .97 !important;
 }
