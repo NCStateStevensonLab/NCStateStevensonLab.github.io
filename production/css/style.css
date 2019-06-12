@@ -1355,11 +1355,11 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 }
 
 .qc-6-milk-tank-1-arrow {
-  transform: rotate(-145deg) !important;
+  transform: rotate(135deg) !important;
 }
 
 .qc-6-positive-site-arrow {
-  transform: rotate(140deg) !important;
+  transform: rotate(-140deg) !important;
 }
 
 .qa-6-milk-filler-arrow {
