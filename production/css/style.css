@@ -788,6 +788,11 @@ body {
   z-index: 99 !important;
 }
 
+/* Progress Bar override for non-standard (900px) wide screens */
+#Progress_Bar_Wide {
+  z-index: 999 !important;
+}
+
 /* Removes the default hover state on text links that are not styled as buttons */
 .nc-text-link {
   border-bottom: none;
@@ -1231,6 +1236,11 @@ iframe#Welcome_audioPlayer_Walter_Intro {
   width: auto !important;
   border-radius: 10px;
   border: 2px solid #FDD726 !important;
+}
+
+.starburst-textbox {
+  padding: 5px 5px 5px 6px !important;
+  background: rgba(255,255,255,.95) !important;
 }
 
 .qa-number {
