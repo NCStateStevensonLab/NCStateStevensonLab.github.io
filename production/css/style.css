@@ -1086,7 +1086,7 @@ body {
 
 /* Add slide background screen overlay for full-screen modal */
 .modal-screen-dark {
-  background: rgba(0,0,0,.75) !important;
+  background: rgba(0,0,0,.6) !important;
 }
 
 /* Remove the "x" close button from the modal screen popup */
