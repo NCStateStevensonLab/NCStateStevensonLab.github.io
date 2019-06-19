@@ -1239,8 +1239,9 @@ iframe#Welcome_audioPlayer_Walter_Intro {
 }
 
 .starburst-textbox {
-  padding: 5px 5px 5px 6px !important;
+  padding: 7px 7px 7px 7px !important;
   background: rgba(255,255,255,.95) !important;
+  width: auto !important;
 }
 
 .qa-number {
