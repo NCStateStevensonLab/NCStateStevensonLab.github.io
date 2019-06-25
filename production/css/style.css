@@ -1089,6 +1089,10 @@ body {
   background: rgba(0,0,0,.6) !important;
 }
 
+.modal-screen-dark li {
+  margin-left: 0 !important;
+}
+
 /* Remove the "x" close button from the modal screen popup */
 .modal-screen-dark .close span {
   display: none;
