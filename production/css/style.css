@@ -1386,7 +1386,22 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   width: 1100px !important;
 }
 
-/* Remove color border from popup associated with color icon label */
+/* Remove the color border from popup associated with color icon label */
 .info-icon-popup {
   border: none;
+}
+
+/* Add full-width Resource Panel */
+.beagleContainer .beagleAppSidebarView.open {
+  width: 100vw;
+  background: #555;
+}
+
+.beagleContainer .beagleAppSidebarView .appHeader {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.beagleContainer iframe#beagle_Resources {
+  width: 90%;
 }
