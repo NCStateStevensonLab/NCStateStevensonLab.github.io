@@ -1413,7 +1413,7 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   margin-top: -2px;
 }
 
-.beagleContainer iframe#beagle_Resources {
+.beagleContainer .beagleApp-Resources.open iframe#beagle_Resources {
   width: 100%;
 /*
   margin: 0 auto;
