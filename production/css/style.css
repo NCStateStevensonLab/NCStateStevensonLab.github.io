@@ -1380,3 +1380,7 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 .qa-6-milk-filler-arrow {
   transform: rotate(-20deg) !important;
 }
+
+.wide-frame iframe#ProgressBar {
+  width: 1100px !important;
+}
