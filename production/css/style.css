@@ -1405,3 +1405,8 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 .beagleContainer iframe#beagle_Resources {
   width: 90%;
 }
+
+/* Remove the app "Variables" from the screen rendering. This is necessary for function, but has no role in the interface, leading to confusion if clicked on. Variables is the first app in each lesson to enable variable stored content. */
+.beagleAppItemView:first-of-type {
+  display: none;
+}
