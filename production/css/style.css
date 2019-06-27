@@ -1424,7 +1424,7 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 /*
@@ -1440,6 +1440,9 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: .7; 
   }
   100% {
     opacity: 1;
