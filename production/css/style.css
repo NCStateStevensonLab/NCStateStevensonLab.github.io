@@ -1391,6 +1391,11 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   border: none;
 }
 
+/* Remove the auto-styled border color from the popover */
+.info-popup {
+  border: none !important;
+}
+
 /* Add full-width Resource Panel */
 .beagleContainer .beagleApp-Resources.open {
   width: 100vw;
