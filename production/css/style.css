@@ -1057,7 +1057,9 @@ body {
 
 /* Adds scroll for audio transcripts - needs to be placed as a class on the popup window, not the popup hotspot */
 .nc-scroll div {
-  overflow: scroll !important;
+/*  overflow: scroll !important;*/
+  overflow-x: hidden;
+  overflow-y: scroll !important;
 }
 
 /* Content overflow visible */
