@@ -1485,14 +1485,14 @@ span.theme-header-beagle__label::before {
 
 .VideoPlayerPopUp div {
   /* no rounded edges on popup container */
-  border-radius: 0;
+  border-radius: 0 !important;
   /* override LMS margin-top default */
   margin-top: 0 !important;
 }
 
 /* hide the popup x close button from the full popup width video player */
-.VideoPlayerPopUp div button.close {
-  display: none;
+.VideoPlayerPopUp  > button.close {
+  display: none !important;
 }
 
 .VideoPlayerButton button {
