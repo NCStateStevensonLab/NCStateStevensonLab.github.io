@@ -1513,6 +1513,13 @@ span.theme-header-beagle__label::before {
   background: #000;
 }
 
+.scene1PlayerIndexTab,
+.scene2PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  background: #000 !important;
+}
+
 .scene2PlayerIndexTab::before {
   content: '';
   position: absolute;
