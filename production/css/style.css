@@ -1486,8 +1486,8 @@ span.theme-header-beagle__label::before {
 .videoPlayerPopUp > div {
   /* no rounded edges on popup container */
   border-radius: 0 !important;
-  /* override LMS margin-top default */
-  margin-top: 0 !important;
+  /* override LMS margin-top default, -1px to hide the black border at the top of the media player */
+  margin-top: -1px !important;
 }
 
 /* hide the popup x close button from the full popup width video player */
