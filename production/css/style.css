@@ -1498,3 +1498,31 @@ span.theme-header-beagle__label::before {
 .videoPlayerButton button {
   background: #F3F3F3;
 }
+
+.scene1PlayerIndexTab::before {
+  content: '';
+  position: absolute;
+  top: 178px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+}
+
+.scene2PlayerIndexTab::before {
+  content: '';
+  position: absolute;
+  top: 245px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+}
