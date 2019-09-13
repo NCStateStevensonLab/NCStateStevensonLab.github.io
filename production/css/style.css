@@ -1483,7 +1483,7 @@ span.theme-header-beagle__label::before {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.VideoPlayerPopUp div {
+.videoPlayerPopUp > div {
   /* no rounded edges on popup container */
   border-radius: 0 !important;
   /* override LMS margin-top default */
@@ -1491,10 +1491,10 @@ span.theme-header-beagle__label::before {
 }
 
 /* hide the popup x close button from the full popup width video player */
-.VideoPlayerPopUp  > button.close {
+.videoPlayerPopUp  > button > span {
   display: none !important;
 }
 
-.VideoPlayerButton button {
+.videoPlayerButton button {
   background: #F3F3F3;
 }
