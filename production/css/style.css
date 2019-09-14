@@ -1508,10 +1508,16 @@ span.theme-header-beagle__label::before {
   border-radius: 0 !important;
 }
 
-.scene1PlayerIndexTab::before {
+.scene1PlayerIndexTab::before,
+.scene2PlayerIndexTab:before,
+.scene3PlayerIndexTab:before,
+.scene4PlayerIndexTab:before,
+.scene5PlayerIndexTab:before,
+.scene6PlayerIndexTab:before,
+.scene7PlayerIndexTab:before,
+{
   content: '';
   position: absolute;
-  top: 178px;
   width: 30px;
   height: 30px;
   -webkit-transform-origin: center;
@@ -1524,12 +1530,19 @@ span.theme-header-beagle__label::before {
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   background: #CC0000;
+}
+
+.scene1PlayerIndexTab::before {
+  top: 178px;
 }
 
 .scene2PlayerIndexTab::before {
+/*
   content: '';
   position: absolute;
+*/
   top: 245px;
+/*
   width: 30px;
   height: 30px;
   -webkit-transform-origin: center;
@@ -1542,8 +1555,20 @@ span.theme-header-beagle__label::before {
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   background: #CC0000;
+*/
 }
 
+.scene3PlayerIndexTab::before {
+  top: 317px;
+}
+
+.scene4PlayerIndexTab::before {
+  top: 390px;
+}
+
+.scene5PlayerIndexTab::before {
+  top: 463px;
+}
 
 
 
