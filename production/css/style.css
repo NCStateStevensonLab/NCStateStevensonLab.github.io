@@ -1511,6 +1511,9 @@ span.theme-header-beagle__label::before {
   border-radius: 50%;
   width: 100%;
   cursor: pointer;
+  
+  /* adding display none because audio auto-play issue is in LMS and not affected by closing an open popup */
+  display: none;
 }
 
 
