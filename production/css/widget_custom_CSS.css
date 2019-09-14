@@ -1,0 +1,61 @@
+/** videoButtonLinks button-component wiget CSS **/
+
+.button.selected:before,
+.button.waiting:before {
+  background: none !important;
+  animation: none;
+}
+
+.button.waiting {
+  color: #CC0000;
+  opacity: 1;
+}
+
+.button {
+  padding: 0 15px !important;
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  height: 50px !important;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  background: #F3F3F3;
+  color: #CC0000;
+}
+
+/** END videoButtonLinks button-component wiget CSS **/
+
+
+/** subFooter secondary button-component wiget CSS **/
+
+.button.selected:before,
+.button.waiting:before {
+  background: none !important;
+  animation: none;
+}
+
+.button.waiting {
+  color: #990000;
+  opacity: 1;
+}
+
+
+.button {
+  padding: 0 15px !important;
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  height: 50px !important;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  background: #F3F3F3;
+  color: #990000;
+  border: 3px solid #990000;
+}
+
+/** END videoButtonLinks button-component wiget CSS **/
+
+
+
