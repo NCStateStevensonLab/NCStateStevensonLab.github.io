@@ -1491,9 +1491,27 @@ span.theme-header-beagle__label::before {
 }
 
 /* hide the popup x close button from the full popup width video player */
+/*
 .videoPlayerPopUp  > button > span {
   display: none !important;
 }
+*/
+
+/* Need to add this back in and style it because audio from hidden windows may still play */
+.videoPlayerPopUp > button {
+  height: 27px;
+  margin: 10px 25px 0 0;
+}
+
+.videoPlayerPopUp > button > span {
+  color: #CC0000;
+  background: rgba(255,255,255.8);
+  border: 3px solid #CC0000;
+  border-radius: 50%;
+  width: 100%;
+}
+
+
 
 .videoPlayerButton button {
   background: #F3F3F3;
@@ -1529,6 +1547,7 @@ span.theme-header-beagle__label::before {
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   background: #CC0000;
+  border-radius: 2px;
 }
 
 .scene1PlayerIndexTab::before {
