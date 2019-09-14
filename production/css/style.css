@@ -1502,6 +1502,9 @@ span.theme-header-beagle__label::before {
   height: 27px;
   margin: 10px 25px 0 0;
   cursor: pointer;
+  
+  /* need to hide the button too, not just the span because there can be overlap with YouTube's Info button */
+  display: none;
 }
 
 .videoPlayerPopUp > button > span {
