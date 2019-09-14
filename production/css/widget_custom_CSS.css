@@ -9,6 +9,7 @@
 .button.waiting {
   color: #CC0000;
   opacity: 1;
+  border: 3px solid #CC0000;
 }
 
 .button {
@@ -22,6 +23,23 @@
   font-size: 16px;
   background: #F3F3F3;
   color: #CC0000;
+  border: 3px solid #CC0000;
+}
+
+.button.selected {
+  border: 3px solid #CC0000;
+  /* required because default in LMS selected is transparent */
+  color: #CC0000 !important;
+}
+
+.button:visited {
+  border: 3px solid #CC0000;
+  background: #CCC;
+  color: #CC0000;
+}
+
+.button.selected, .button:focus, .button:hover, .button:active {
+  border: 3px solid #CC0000;
 }
 
 /** END videoButtonLinks button-component wiget CSS **/
