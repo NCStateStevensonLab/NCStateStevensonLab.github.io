@@ -29,7 +29,8 @@
 .button.selected {
   border: 3px solid #CC0000;
   /* required because default in LMS selected is transparent */
-  color: #CC0000 !important;
+  color: #FFF !important;
+  background: #CC0000;
 }
 
 .button:visited {
@@ -41,6 +42,69 @@
 .button.selected, .button:focus, .button:hover, .button:active {
   border: 3px solid #CC0000;
 }
+
+/** END videoButtonLinks button-component wiget CSS **/
+
+
+
+
+
+
+
+
+
+
+/** simple videoButtonLinks button-component wiget CSS **/
+
+/* can we only target :visited links? */
+.button:visited {
+  border: 3px solid purple;
+}
+
+/* required to overide LMS animated spinners on any clicked buttons */
+.button.selected:before,
+.button.waiting:before {
+  background: none !important;
+  animation: none;
+}
+
+.button.waiting {
+  color: #CC0000;
+  opacity: 1;
+  border: 3px solid #CC0000;
+}
+
+/* button style for button element */
+.button {
+/*  padding: 0 15px !important;*/
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  height: 50px !important;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 16px;
+  background: #F3F3F3;
+  color: #CC0000;
+  border: 3px solid #CC0000;
+}
+
+
+.button.selected {
+  border: 3px solid #CC0000;
+  /* required because default in LMS selected is transparent */
+  color: #FFF !important;
+  background: #CC0000;
+}
+
+.button.selected, .button:focus, .button:hover, .button:active {
+  border: 3px solid #CC0000;
+}
+
+
+
+
+
 
 /** END videoButtonLinks button-component wiget CSS **/
 
