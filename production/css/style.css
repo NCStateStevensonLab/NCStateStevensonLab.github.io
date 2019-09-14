@@ -1499,6 +1499,15 @@ span.theme-header-beagle__label::before {
   background: #F3F3F3;
 }
 
+.scene1PlayerIndexTab,
+.scene2PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #cc0000 !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
 .scene1PlayerIndexTab::before {
   content: '';
   position: absolute;
@@ -1511,13 +1520,10 @@ span.theme-header-beagle__label::before {
   border-left: inherit;
   border-top: inherit;
   background: #000;
-}
-
-.scene1PlayerIndexTab,
-.scene2PlayerIndexTab {
-  box-sizing: content-box;
-  overflow: visible !important;
-  background: #000 !important;
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  background: #CC0000;
 }
 
 .scene2PlayerIndexTab::before {
@@ -1532,4 +1538,17 @@ span.theme-header-beagle__label::before {
   border-left: inherit;
   border-top: inherit;
   background: #000;
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  background: #CC0000;
+}
+
+
+
+
+
+/* set overide to enable screen content overflow */
+.content-overflow .content {
+  overflow: visible !important;
 }
