@@ -1509,12 +1509,12 @@ span.theme-header-beagle__label::before {
 }
 
 .scene1PlayerIndexTab::before,
-.scene2PlayerIndexTab:before,
-.scene3PlayerIndexTab:before,
-.scene4PlayerIndexTab:before,
-.scene5PlayerIndexTab:before,
-.scene6PlayerIndexTab:before,
-.scene7PlayerIndexTab:before {
+.scene2PlayerIndexTab::before,
+.scene3PlayerIndexTab::before,
+.scene4PlayerIndexTab::before,
+.scene5PlayerIndexTab::before,
+.scene6PlayerIndexTab::before,
+.scene7PlayerIndexTab::before {
   content: '';
   position: absolute;
   width: 30px;
