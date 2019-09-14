@@ -1501,6 +1501,7 @@ span.theme-header-beagle__label::before {
 .videoPlayerPopUp > button {
   height: 27px;
   margin: 10px 25px 0 0;
+  cursor: pointer;
 }
 
 .videoPlayerPopUp > button > span {
@@ -1509,6 +1510,7 @@ span.theme-header-beagle__label::before {
   border: 3px solid #CC0000;
   border-radius: 50%;
   width: 100%;
+  cursor: pointer;
 }
 
 
