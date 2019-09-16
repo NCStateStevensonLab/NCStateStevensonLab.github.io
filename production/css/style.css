@@ -1568,23 +1568,23 @@ span.theme-header-beagle__label::before {
 }
 
 .scene1PlayerIndexTab::before {
-  top: 178px;
+  top: 18px;
 }
 
 .scene2PlayerIndexTab::before {
-  top: 245px;
+  top: 89px;
 }
 
 .scene3PlayerIndexTab::before {
-  top: 317px;
+  top: 161px;
 }
 
 .scene4PlayerIndexTab::before {
-  top: 390px;
+  top: 234px;
 }
 
 .scene5PlayerIndexTab::before {
-  top: 463px;
+  top: 306px;
 }
 
 .scene6PlayerIndexTab::before {
@@ -1653,27 +1653,27 @@ span.theme-header-beagle__label::before {
 
 .L2scene1PlayerIndexTab::before {
   content: '1 of 5';
-  top: 178px;
+  top: 18px;
 }
 
 .L2scene2PlayerIndexTab::before {
   content: '2 of 5';
-  top: 245px;
+  top: 89px;
 }
 
 .L2scene3PlayerIndexTab::before {
   content: '3 of 5';
-  top: 317px;
+  top: 161px;
 }
 
 .L2scene4PlayerIndexTab::before {
   content: '4 of 5';
-  top: 390px;
+  top: 234px;
 }
 
 .L2scene5PlayerIndexTab::before {
   content: '5 of 5';
-  top: 463px;
+  top: 306px;
 }
 
 /* Setting for Lesson 5 - Collections Videos 1-8 */
