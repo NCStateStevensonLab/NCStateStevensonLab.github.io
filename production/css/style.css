@@ -1525,11 +1525,16 @@ span.theme-header-beagle__label::before {
   background: #F3F3F3;
 }
 
+/* Default Player */
+
 .scene1PlayerIndexTab,
 .scene2PlayerIndexTab,
 .scene3PlayerIndexTab,
 .scene4PlayerIndexTab,
-.scene5PlayerIndexTab {
+.scene5PlayerIndexTab,
+.scene6PlayerIndexTab,
+.scene7PlayerIndexTab,
+.scene8PlayerIndexTab {
   box-sizing: content-box;
   overflow: visible !important;
   border-left: 2px solid #cc0000 !important;
@@ -1543,7 +1548,8 @@ span.theme-header-beagle__label::before {
 .scene4PlayerIndexTab::before,
 .scene5PlayerIndexTab::before,
 .scene6PlayerIndexTab::before,
-.scene7PlayerIndexTab::before {
+.scene7PlayerIndexTab::before,
+.scene8PlayerIndexTab::before {
   content: '';
   position: absolute;
   width: 30px;
@@ -1566,25 +1572,7 @@ span.theme-header-beagle__label::before {
 }
 
 .scene2PlayerIndexTab::before {
-/*
-  content: '';
-  position: absolute;
-*/
   top: 245px;
-/*
-  width: 30px;
-  height: 30px;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  background: inherit;
-  border-left: inherit;
-  border-top: inherit;
-  background: #000;
-  left: 0;
-  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
-  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
-  background: #CC0000;
-*/
 }
 
 .scene3PlayerIndexTab::before {
@@ -1598,6 +1586,134 @@ span.theme-header-beagle__label::before {
 .scene5PlayerIndexTab::before {
   top: 463px;
 }
+
+.scene6PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene7PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene8PlayerIndexTab::before {
+  top: 463px;
+}
+
+
+/* Custom Player - enables #x of #x ::before content for the tab bar left of player buttons */
+
+.scene1PlayerIndexTab,
+.scene2PlayerIndexTab,
+.scene3PlayerIndexTab,
+.scene4PlayerIndexTab,
+.scene5PlayerIndexTab,
+.scene6PlayerIndexTab,
+.scene7PlayerIndexTab,
+.scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #cc0000 !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.scene1PlayerIndexTab::before,
+.scene2PlayerIndexTab::before,
+.scene3PlayerIndexTab::before,
+.scene4PlayerIndexTab::before,
+.scene5PlayerIndexTab::before,
+.scene6PlayerIndexTab::before,
+.scene7PlayerIndexTab::before,
+.scene8PlayerIndexTab::before {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: -300px;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  background: #CC0000;
+  color: #FFF;
+  padding: 16px 2px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Setting for Lesson 2 - Zones Videos 1-5 */
+
+.L2scene1PlayerIndexTab::before {
+  content: '1 of 5';
+  top: 178px;
+}
+
+.L2scene2PlayerIndexTab::before {
+  content: '2 of 5';
+  top: 245px;
+}
+
+.L2scene3PlayerIndexTab::before {
+  content: '3 of 5';
+  top: 317px;
+}
+
+.L2scene4PlayerIndexTab::before {
+  content: '4 of 5';
+  top: 390px;
+}
+
+.L2scene5PlayerIndexTab::before {
+  content: '5 of 5';
+  top: 463px;
+}
+
+/* Setting for Lesson 5 - Collections Videos 1-8 */
+
+.L5scene1PlayerIndexTab::before {
+  content: '1 of 8';
+  top: 18px;
+}
+
+.L5scene2PlayerIndexTab::before {
+  content: '2 of 8';
+  top: 89px;
+}
+
+.L5scene3PlayerIndexTab::before {
+  content: '3 of 8';
+  top: 161px;
+}
+
+.L5scene4PlayerIndexTab::before {
+  content: '4 of 8';
+  top: 234px;
+}
+
+.L5scene5PlayerIndexTab::before {
+  content: '5 of 8';
+  top: 306px;
+}
+
+.L5scene6PlayerIndexTab::before {
+  content: '6 of 8';
+  top: 378px;
+}
+
+.L5scene7PlayerIndexTab::before {
+  content: '7 of 8';
+  top: 451px;
+}
+
+.L5scene8PlayerIndexTab::before {
+  content: '8 of 8';
+  top: 522px;
+}
+
+
 
 
 
