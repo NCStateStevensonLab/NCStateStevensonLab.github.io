@@ -1615,7 +1615,7 @@ span.theme-header-beagle__label::before {
 .L2scene8PlayerIndexTab {
   box-sizing: content-box;
   overflow: visible !important;
-  border-left: 2px solid #cc0000 !important;
+  border-left: 2px solid #EEE !important;
   margin-top: 0px !important;
   border-radius: 0 !important;
 }
@@ -1688,7 +1688,7 @@ span.theme-header-beagle__label::before {
 .L5scene8PlayerIndexTab {
   box-sizing: content-box;
   overflow: visible !important;
-  border-left: 2px solid #cc0000 !important;
+  border-left: 2px solid #EEE !important;
   margin-top: 0px !important;
   border-radius: 0 !important;
 }
