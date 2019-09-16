@@ -1631,15 +1631,19 @@ span.theme-header-beagle__label::before {
   position: absolute;
   width: 41px;
   height: 34px;
+/*
   -webkit-transform-origin: center;
   transform-origin: center;
+*/
   background: inherit;
   border-left: inherit;
   border-top: inherit;
   background: #000;
   left: -300px;
+/*
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+*/
   background: #CC0000;
   color: #FFF;
   padding: 16px 2px 0 7px;
@@ -1700,15 +1704,19 @@ span.theme-header-beagle__label::before {
   position: absolute;
   width: 41px;
   height: 34px;
+/*
   -webkit-transform-origin: center;
   transform-origin: center;
+*/
   background: inherit;
   border-left: inherit;
   border-top: inherit;
   background: #000;
   left: -300px;
+/*
   -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
   transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+*/
   background: #CC0000;
   color: #FFF;
   padding: 16px 2px 0 7px;
