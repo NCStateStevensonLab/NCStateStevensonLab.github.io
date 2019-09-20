@@ -1,0 +1,307 @@
+/* CSS for Environmental Monitoring Course powered by Smart Sparrow */
+
+.consent-txt-scroll {
+  overflow: scroll;
+  max-height: 445px;
+  padding: 20px;
+}
+
+/* BEGIN Smart Sparrow Delivered CSS */
+
+body {
+  font-family: 'Arial', sans-serif
+}
+
+.headerContainer {
+  background: $color_WolfpackRed;
+}
+
+@media (min-width:701px) {
+  .headerContainer .defaultView:before {
+    content: '';
+    display: block;
+    width: 145px;
+    height: 37px;
+    border-right: 1px solid #fff;
+    margin-right: 14px;
+    background: url('../assets/img/ncsu-logo.png') no-repeat center;
+    background-size: 152px 45px
+  }
+}
+
+.headerContainer .lessonTitle {
+  font-style: italic;
+  font-weight: 600;
+  color: #fff
+}
+
+.headerContainer .lessonTitle:before {
+  content: 'Environmental Monitoring in the Dairy Industry';
+  display: block;
+  font-style: normal
+}
+
+@media (max-width:900px) {
+  .headerContainer .lessonTitle:before {
+    font-size: 14px
+  }
+}
+
+@media (max-width:700px) {
+  .headerContainer .lessonTitle:before {
+    display: none
+  }
+}
+
+.theme-header-beagle__toggle,
+.theme-header-profile__toggle {
+  background: none
+}
+
+.theme-header-score,
+.theme-header-beagle__label,
+.theme-header-profile__label {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9)
+}
+
+@media (max-width:700px) {
+  .theme-header-score__label {
+    display: none
+  }
+}
+
+.theme-header-score__icon {
+  background: url('../assets/icons/icon-star.svg')
+}
+
+.theme-header-beagle__icon {
+  background: url('../assets/icons/icon-apps.svg')
+}
+
+.theme-header-profile__icon {
+  background: url('../assets/icons/icon-account.svg')
+}
+
+.theme-history .history-element-selected .history-element__screenName {
+  color: #cc0000
+}
+
+#stage-stage .number-input input,
+#stage-stage .short-text-input input {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .number-input input:focus,
+#stage-stage .short-text-input input:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .number-input input:disabled,
+#stage-stage .short-text-input input:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .long-text-input textarea {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .long-text-input textarea:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .long-text-input textarea:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .dropdown-input select,
+#stage-stage .boolean-input select {
+  font-family: 'Arial', sans-serif !important
+}
+
+#stage-stage .dropdown-input select:focus,
+#stage-stage .boolean-input select:focus {
+  border-color: #cc0000 !important
+}
+
+#stage-stage .dropdown-input select:disabled,
+#stage-stage .boolean-input select:disabled {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+#stage-stage .slider-input .ui-slider-handle {
+  background: #cc0000
+}
+
+#stage-stage .slider-input .ui-slider-handle:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:checked + label::before {
+  box-shadow: inset 0 0 0 20px #cc0000
+}
+
+#stage-stage .mcq-input input:focus + label::before {
+  box-shadow: inset 0 0 0 2px #cc0000, 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:checked:focus + label::before {
+  box-shadow: inset 0 0 0 20px #cc0000, 0 0 0 4px rgba(204, 0, 0, 0.4)
+}
+
+#stage-stage .mcq-input input:disabled + label::before {
+  background: #ebebe4 !important;
+  cursor: not-allowed
+}
+
+.modal-footer button[name="OK"] {
+  background-color: #cc0000 !important
+}
+
+.modal-footer button[name="OK"]:hover {
+  background-color: #900 !important
+}
+
+.modal-footer button[name="OK"]:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.modal-footer button[name="CANCEL"] {
+  color: #cc0000 !important
+}
+
+.modal-footer button[name="CANCEL"]:hover {
+  background-color: rgba(204, 0, 0, 0.1) !important
+}
+
+.modal-footer button[name="CANCEL"]:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.info-icon:not(.no-restyle) {
+  background-color: #cc0000 !important
+}
+
+.info-icon:not(.no-restyle).no-close .close {
+  display: none
+}
+
+.background {
+  background-color: #f2f2f2
+}
+
+.stageContainer .content {
+  border-color: #ccc
+}
+
+.stageContainer .content span,
+.stageContainer .content strong,
+.stageContainer .content em {
+  font-family: 'Arial', sans-serif !important
+}
+
+.checkContainer {
+  border-color: #ccc
+}
+
+.checkContainer .checkBtn,
+.checkContainer .closeFeedbackBtn {
+  background: #cc0000 !important
+}
+
+.checkContainer .checkBtn:hover,
+.checkContainer .closeFeedbackBtn:hover,
+.checkContainer .checkBtn:focus,
+.checkContainer .closeFeedbackBtn:focus,
+.checkContainer .checkBtn:active,
+.checkContainer .closeFeedbackBtn:active {
+  background: #900 !important
+}
+
+.checkContainer .checkBtn:focus,
+.checkContainer .closeFeedbackBtn:focus {
+  box-shadow: 0 0 0 4px rgba(204, 0, 0, 0.3)
+}
+
+.feedbackContainer .toggleFeedbackBtn .icon::before {
+  background: url('../assets/icons/icon-feedback.svg')
+}
+
+.no-tray .checkContainer {
+  display: none
+}
+
+.speech-bubble-left,
+.speech-bubble-right {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important
+}
+
+.speech-bubble-left:before,
+.speech-bubble-right:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left:after,
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 100%;
+  background: inherit
+}
+
+@media (max-width:900px) {
+
+  .speech-bubble-left:before,
+  .speech-bubble-right:before,
+  .speech-bubble-left:after,
+  .speech-bubble-right:after {
+    display: none
+  }
+}
+
+/* N added left-center to core SS code */
+.speech-bubble-left:before,
+.speech-bubble-left-center:before,
+.speech-bubble-left-bottom:before {
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
+}
+
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
+  left: 0
+}
+
+.speech-bubble-right:before,
+.speech-bubble-right-center:before,
+.speech-bubble-right-bottom:before {
+  right: 0;
+  -webkit-transform: translateX(50%) rotate(135deg) skew(10deg, 10deg);
+  transform: translateX(50%) rotate(135deg) skew(10deg, 10deg)
+}
+
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
+  right: 0
+}
+
+/* END Smart Sparrow CSS */
