@@ -1,0 +1,1446 @@
+// Variables
+@import "source/variables";
+
+// Cover and Credits
+@import "source/cover-credits";
+
+//Smart Sparrow Environment and HTML
+@import "source/smart-sparrow-default";
+
+// Add Animation Library Extras
+@import "source/animation.scss";
+
+/* BEGIN Custom CSS */
+
+// Constraints content to canvas area, hiding off canvas popup triggers and applying a clean border radius to edge content
+.content {
+  overflow: hidden;
+}
+
+.speech-bubble-left,
+.speech-bubble-left-center,
+.speech-bubble-left-bottom,
+.speech-bubble-right,
+.speech-bubble-right-center,
+.speech-bubble-right-bottom,
+.speech-bubble-bottom,
+.speech-bubble-bottom-left,
+.speech-bubble-bottom-right {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
+}
+
+.speech-bubble-left:before,
+.speech-bubble-right:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender centered on bottom of bubble*/
+.speech-bubble-bottom:before {
+  content: '';
+  position: absolute;
+  left: 44%;
+/*  top: 93%;*/
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 7.5%;*/
+  left: calc(100% - 319px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+/*  left: 83%;*/
+  left: calc(100% - 58px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* The default speech bubble aside hangs from the top of the speech bubble  This centers speech bubble on left frame to create greater flexablity*/
+.speech-bubble-left-center:before,
+.speech-bubble-right-center:before {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left-bottom:before,
+.speech-bubble-right-bottom:before {
+  content: '';
+  position: absolute;
+  top: 71px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after,
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after
+{
+  content: '';
+  position: absolute;
+/*  top: 0;*/
+/* Top needs to be 2px (to prevent overlay over border) because speech bubble border is 2px */
+  top: 2px;
+  width: 25px;
+/*  height: 100%;*/
+  /* need to set the height to less than 100% so it does not overlap the edges of the text box [a hard to identify, intermediate problem depending on the size of the text boxes after rendering] */
+  height: 98%;
+  background: inherit
+}
+
+/* Prevent ::after element from overlaying left border when speech bubble tongue is on left side */
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
+  left: 0;
+}
+
+/* Prevent ::after element from overlaying right border when speech bubble tongue is on right side */
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
+  right: 0;
+}
+
+.speech-bubble-bottom:after,
+.speech-bubble-bottom-left:after,
+.speech-bubble-bottom-right:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  background: inherit
+}
+
+
+
+/* Floor Drain Image Text Rotation */
+.nicheFolderLeftImageText {
+  transform: rotate(3.7deg);
+}
+
+/* Conveyer Belts Image Text Rotation */
+.nicheFolderRightImageText {
+  transform: rotate(-2.5deg);
+}
+
+/*Dairy Learning Center Image */
+.singleImageText {
+  transform: rotate(-1deg);
+}
+
+/* Add shorter duration classes */
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-0-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-0-25 {
+    animation-delay: 0.25s;
+}
+
+.delay-0-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-1-5 {
+  animation-delay: 1.5s;
+}
+
+.delay-7 {
+  animation-delay: 7s;
+}
+
+.delay-7-5 {
+  animation-delay: 7.5s;
+}
+
+.delay-8 {
+  animation-delay: 8s;
+}
+
+.delay-8-5 {
+  animation-delay: 8.5s;
+}
+
+.delay-9 {
+  animation-delay: 9s;
+}
+
+.delay-9-5 {
+  animation-delay: 9.5s;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}
+
+/* Add custom popup style for Fat Tom interactive */
+.FatTomPopup {
+  height: 400px;
+  margin-top: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.FatTomPopup div {
+  border-radius: 0;
+}
+
+/* Add custom style for carousel */
+.carousel-wide .owl-carousel .owl-item .slide img {
+  max-height: 80vH;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+  
+.owl-carousel .owl-nav .owl-prev {
+  margin-left: 5px;
+  text-indent: -9999px;
+  line-height: 0;
+  margin-top: -30%;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  margin-left: 5px;
+  text-indent: -9999px;
+  line-height: 0;
+  margin-top: -30%;
+}
+
+.owl-prev::after {
+  font-size: 300px;
+  color: red;
+  content: "<";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.owl-next::after {
+  font-size: 300px;
+  color: red;
+  content: ">";
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+
+/* Add star icon for showing progress */
+.starIconToggle #stage-stage .mcq-input input[type=radio]+label:after {    
+  content: '';
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+  transform: scale(.4) translate(-50%, -50%);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -1px;
+  opacity: 0;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+  background-size: 40rem;
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  height: 60px;
+  width: 60px;
+  z-index: 999;
+  background-size: cover;
+}
+
+ .starIconToggle input:checked + label::before {    
+  content: '';
+  transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+  transform: scale(.4) translate(-50%, -50%);
+  transform-origin: top left;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -1px;
+  opacity: 0;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
+  height: 60px;
+  width: 60px;
+  z-index: 999;
+  background-size: cover;
+}
+
+#stage-stage .starIconToggle input:checked + label::before {    
+    content: '';
+    transition: all .3s cubic-bezier(.4, 0, .2, 1) .1s;
+    transform: scale(.4) translate(-50%, -50%);
+    transform-origin: top left;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -1px;
+/*    opacity: 0;*/
+/*
+    background: #ffffff;
+    border: 2px solid #ffffff;
+*/
+    background: url(http://nathanielpowers.com/SmartSparrow/img/star_white.png);
+/*    background-size: 40rem;*/
+/*    position: absolute;*/
+/*    right: 40%;*/
+/*    bottom: 0;*/
+    height: 60px;
+    width: 60px;
+    z-index: 999;
+    background-size: cover;
+}
+
+/* Hides Google Spreadsheet Footer Link */
+.iframe-spreadsheet {
+  height: 37rem !important;
+}
+
+/* Adds padding to text box */
+.pad-text {
+  padding: 2% 0 0 2.3% !important;
+  width: calc(44.6%) !important;
+}
+
+
+.flashcard-hover:hover ~ .flashcard {
+  -webkit-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  -moz-box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+  box-shadow: 25px 37px 5px 0px rgba(255,8,255,1);
+}
+
+.nc-flashcard {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+/* Sets custom text button. Text color comes from text box style */
+.nc-text-button {
+  border-radius: 0;
+}
+
+.nc-text-button a {
+  text-decoration:none !important;
+  display: block !important;
+  padding: 10px 0 !important;
+  background: #CC0000;
+  border-radius: 4px;
+  color: #FFF;
+}
+
+.nc-text-button a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: none !important;
+  background: #900;
+  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
+}
+
+.nc-text-button span:hover {
+  border-bottom: none !important;
+}
+
+.nc-title-slide h1 span {
+  line-height: 1.09;
+}
+
+/* Simulates a button for text that needs to be in italics. The current Smart Sparrow button element does not support italics. In-text links can only link out to other webpages and cannot link to internal screens. The work-around is to place a transparent button element (linked to an internal screen) in front of styled, button-looking text. Note: with the active button on top and Smart Sparrow's (2018) component structure, it is not possible to style the underlying text on a hover or active button state. */
+.nc-text-emulates-button,
+.nc-txt-btn-primary,
+.nc-txt-btn-secondary {
+/*
+  background: #cc0000 !important;
+  color: #FFF;
+*/
+  padding: 1% 0 !important;
+  border-radius: 4px;
+}
+
+.nc-txt-btn-primary {
+  background: #CC0000 !important;
+  /* recommended color is #FFF, but should be set in Editor */
+}
+
+.nc-txt-btn-secondary {
+  background: #FFF !important;
+  /* recommended color is #CC0000, but should be set in Editor */
+  -webkit-box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
+  -moz-box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
+  box-shadow: 0px 4px 11px -4px rgba(187,187,187,1);
+}
+
+/* rotates the text on the Dairy Learning Center Polaroid */
+.nc-dairy-center-label {
+  transform: rotate(-.7deg);
+}
+
+
+/* Smart Sparrow brings images forward, covering the progress bar, even when reordered. This sets the z-index of the progress bar so that it is always the most forward layered object on the screen */
+#ProgressBar {
+  z-index: 99 !important;
+}
+
+/* Progress Bar override for non-standard (900px) wide screens */
+#Progress_Bar_Wide {
+  z-index: 999 !important;
+}
+
+/* Removes the default hover state on text links that are not styled as buttons */
+.nc-text-link {
+  border-bottom: none;
+}
+
+/* Add grayscale filter */
+.nc-grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+/* Add course preview menu as textbox */
+.nc-course-preview-menu {
+  padding: 5%;
+  border-radius: 4%;
+  background-color: #F2F2F2;
+}
+
+/* Add icon for menu completion status */ 
+.nc-course-preview-icon {
+  
+}
+
+
+/* After the first paragraph of adaptive feedback, Smart Sparrow adds a p tag element before the next paragraph. This is to counter that addition */
+
+/* For 2-paragraph adaptive feedback */
+/*
+.nc-2-para-fb p:nth-of-type(2) {
+  display: none !important;
+}
+
+#stage-feedback div div div p:nth-of-type(2) {
+  display: none !important;
+}
+
+#stage-feedback div div div p:nth-of-type(2):before {
+  content: '/A';
+}
+*/
+
+/* Reduces the indentation for bullet list */
+.nc-bullet-list li {
+  margin-left: 0 !important;
+}
+
+/* Try to effect a change to the learnspace container */
+.lesson-iframe-close-text::after {
+    content: ' to learnspace';
+}
+
+/* Set colors for Lesson 3 Zone Zones */
+.zone4PopOver {
+  background-color: #4156A1 !important;
+}
+
+.zone3PopOver {
+  background-color: #427E93 !important;
+}
+
+.zone2PopOver {
+  background-color: #D14905 !important;
+}
+
+.zone1PopOver {
+  background-color: #990000 !important;
+}
+
+/* Test to see if can effect change in button */
+.testButton button {
+  background: purple !important;
+}
+
+.info-popup-sidebar {
+  box-shadow: none;
+  border: 1px solid #FFF !important;
+  border-radius: 0 !important;
+  animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal none running info-popup-sidebar !important;
+}
+
+.info-popup-sidebar[aria-hidden="false"] {
+  /* @keyframes duration | timing-function | delay |iteration-count | direction | fill-mode | play-state | name */
+  animation: 0.5s cubic-bezier(0.2, 1, 0.4, 0) 0s 1 normal none running info-popup-sidebar-close !important;
+}
+
+/*
+@keyframes info-popup-sidebar 
+0% { transform: scale(0.4); opacity: 0; }
+100% { transform: scale(1); opacity: 1; }
+*/
+
+@keyframes info-popup-sidebar {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes info-popup-sidebar-close {
+	from {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.nc-rounded-labels {
+  border-radius: 50px;
+  border: 3px solid #333 !important;
+}
+
+.nc-screen-text {
+  padding: 6px !important;
+  border-radius: 5px;
+}
+
+.nc-screen-text p {
+  padding: 1px 12px 1px 7px !important;
+}
+
+
+
+.nc-button-as-label:disabled {
+  opacity: 1 !important;
+}
+
+.nc-fishbone-text-label {
+  border: 4px solid!important;
+  border-radius: 5px !important;
+  text-transform: initial !important;
+  padding: 0 !important;
+  letter-spacing: -.25px;
+  white-space: normal;
+  transition: color .3s ease,background .3s ease,box-shadow .3s ease;
+  padding: 11px 0 !important;
+  width: auto;
+  box-sizing: content-box;
+  overflow: visible !important
+}
+
+.nc-fishbone-text-label span {
+  font-size: 14px !important;
+}
+
+.nc-fishbone-gray {
+  border-color: #E0E0E0 !important;
+}
+
+.nc-fishbone-blue {
+  border-color: #4156A1 !important;
+}
+
+.nc-contrast-textbox {
+  padding: 20px !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+}
+
+.nc-wide-screen-title p span {
+  line-height: 1.05 !important;
+}
+
+
+/* See if this is applied over the base CSS */
+
+/*
+.info-icon-popup:not(.no-restyle) .close span {
+    background-repeat: no-repeat;
+    background: url(../assets/icon-close-dark.svg);
+    width: 18px !important;
+    height: 37px;
+    font-size: 0 !important;
+    margin: auto !important;
+    border-bottom: 0 !important;
+    background-repeat: no-repeat;
+}*/
+
+.feedbackContainer ul {
+  padding-left: 0 !important;
+}
+
+.feedbackContainer ul li {
+  margin-left: 20px !important;
+}
+
+/* Support audio transcript that is too long for screen height */
+.nc-audio-txt div {
+  overflow: scroll !important;
+}
+
+/* Support research consent form scroll so buttons can be visible at the bottom without scrolling the screen */
+#stage-stage .content div.consent-txt-scroll {
+  height: 445px !important;
+  overflow: scroll !important;
+  background: steelblue;
+}
+
+.consent-txt-scroll {
+  overflow: scroll;
+  max-height: 445px;
+}
+
+.consent-txt-scroll p {
+  color: red;
+}
+
+/* doesn't override master 
+.nc-mcq label span {
+  font-size: 16px !important;
+}
+
+*/
+
+#stage-stage .nc-mcq label span {
+  font-size: 16px !important;
+}
+
+#stage-stage .mcq-input label span {
+    font-size: 16px !important;
+}
+
+/* Default text does not wrap and is visibly truncated by the button. This class wraps the text to as many lines as needed. */
+.nc-wrap-btn {
+  white-space: normal;
+}
+
+/* Styling for custom tabs-as-buttons layout */
+/*
+.nc-tab-btn .button {
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 12px;
+  text-transform: none;
+}
+*/
+
+/* Styling needs to be applied in the button CSS string: */
+.button.selected:before, .button.waiting:before{
+  background: none !important;
+} 
+.button.waiting {
+  color: #FFF;
+  opacity: 1;
+}
+.button {
+  padding: 0 15px !important;
+  white-space: normal;
+  line-height: 1.5;
+  font-size: 13px;
+  height: 75px !important;
+  text-transform: none;
+}
+
+/*.button.selected:before, .button.waiting:before{   background: none !important; }  .button.waiting {   color: #FFF;   opacity: 1; } .button {   padding: 0 15px !important;   white-space: normal;   line-height: 1.5;   font-size: 13px;   height: 75px !important;   text-transform: none;}*/
+
+/* Adds scroll for audio transcripts - needs to be placed as a class on the popup window, not the popup hotspot */
+.nc-scroll div {
+/*  overflow: scroll !important;*/
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+
+/* Content overflow visible */
+
+.stage-overflow-visible #stage-stage .content {
+  overflow: visible;
+}
+
+/* TEST */
+.close-btn-above {
+  z-index: 14 !important;
+}
+
+/* Add Close Text to popup dialog X */
+/* Class needs to be applied to the popup box itself */
+/*
+.close-x .close::before {
+    content: "Close";
+    color: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-right: 53px;
+}
+*/
+
+
+/* Add slide background screen overlay for full-screen modal */
+.modal-screen-dark {
+  background: rgba(0,0,0,.6) !important;
+}
+
+.modal-screen-dark li {
+  margin-left: 0 !important;
+}
+
+/* Remove the "x" close button from the modal screen popup */
+.modal-screen-dark .close span {
+  display: none;
+}
+
+
+
+.resource-download-tooltip {
+  padding: 0 !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
+}
+
+.resource-download-tooltip:before {
+  content: '';
+  position: absolute;
+/*  left: 44%;*/
+/*  top: 93%;*/
+/*  top: calc(100% - 14px);*/
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+/*  width: 30px;*/
+/*  height: 30px;*/
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+    left: 62px;
+    top: calc(100% - 15px);
+    width: 30px;
+    height: 30px; 
+}
+
+/* Since there isn't enough fidelity in the popup box (Unlike the main text editor, there isn't a way set precise length and width. Instead, elements can only be dragged, which snap at undesired intervals). I am targeting the divs containing the paragraph and image icons to align them to the left margin. */
+
+/* Align icons to left border */
+.resource-download-tooltip img {
+  left: 11px !important;
+}
+
+/* Align text to left border */
+.resource-download-tooltip div div {
+  left: 45px;
+}
+
+
+/*
+.resource-download-tooltip:before {
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg)
+}
+*/
+
+/* Remove the default inline-block property on paragraph elements in the feedback so paragraph breaks in the Editor will be correctly interpreted. */
+.feedbackContainer .content p {
+  display: block !important;
+}
+
+
+
+/* Smart Sparrow uses this code on their final screen 'finished lesson' modal. It makes a clear close button 
+
+.modal .close {
+    background: url(../assets/icon-close-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    transition: all .3s ease;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    top: -10px;
+    right: -10px;
+    font-size: 0;
+}
+
+.modal .close:after {
+    content: '';
+    transition: all .3s ease;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+*/
+
+/* Add a gradient to fade out content below the fold set by the lesson navigation */
+.checkContainer {
+  background: linear-gradient(to bottom, rgba(255,255,255,.93) 0%,rgba(255,255,255,.96) 39%,rgba(255,255,255,1) 100%) !important;
+}
+
+/*
+iframe#Welcome_audioPlayer_Walter_Intro {
+  visibility: hidden !important;
+  display: none !important;
+}
+*/
+
+.Walter-meet-audio {
+  display: none !important;
+}
+
+#Welcome_infoIcon_Walter_PopUp[aria-haspopup="true"] .Walter-meet-audio {
+/*  visibility: visible !important;*/
+/*  visibility: visible !important;*/
+  display: block !important;
+}
+
+#Welcome_audioPlayer_Walter_Intro {
+  background-color: lime !important;
+}
+/*
+
+.starburst-positive-label {
+  padding: 5px !important;
+  background: rgba(0,0,0,.75);
+}
+
+.starburst-labels p {
+  padding: 5px !important;
+  background: rgba(0,0,0,.75);
+}
+*/
+
+.starburst-positive-label {
+  padding: 5px 2px !important;
+  background: rgba(0,0,0,.75) !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: 3px solid #FDD726 !important;
+}
+
+.starburst-label {
+  padding: 5px 2px !important;
+  background: rgba(0,0,0,.75) !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: 2px solid #FDD726 !important;
+}
+
+.starburst-textbox {
+  padding: 7px 7px 7px 7px !important;
+  background: rgba(255,255,255,.95) !important;
+  width: auto !important;
+}
+
+.qa-number {
+  position: absolute;
+  left: 34px;
+}
+
+.qa-question {
+  
+}
+
+.qa-direction {
+  
+}
+
+.qa-likert-scale {
+  
+}
+
+.qa-likert-eu {
+  
+}
+
+.qa-likert-mu {
+  
+}
+
+.qa-likert-su {
+  
+}
+
+.qa-likert-nue {
+  
+}
+
+.qa-likert-se {
+  
+}
+
+.qa-likert-me {
+  
+}
+
+.qa-likert-ee {
+  
+}
+
+.user-info {
+  background: lightblue;
+}
+
+/* Adds a line beneath the Hello UsersName
+credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
+/*
+#stage-stage .content .user-info h2 {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+#stage-stage .content .user-info h2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: -1 !important;
+  width: 333px !important;
+  width: 70% !important;
+  height: 4px !important;
+  background: #222 !important;  
+}
+*/
+
+/* nth-of-type cannot be used in this configuration. Instead I need nth-child(). Since Smart Sparrow uses the p tag between lines, I expected to be targeting the 3rd line, but because of the two line breaks in there, it is actually the fifth line. Note: If the line breaks are changed, then the style needs to be updated. See below
+.user-info p:nth-of-type(3) {
+  margin: 20px 0;
+  padding: 25px;
+  background: #EEE;
+}
+*/
+
+#stage-stage .content .user-info p:nth-child(5) {
+  padding: 20px !important;
+  background-color: #EEE !important;
+  max-width: 70% !important;
+  border-radius: 5px !important;
+}
+
+.image-label {
+  padding: 5px 2px !important;
+  background: rgba(0,0,0,.75) !important;
+  width: auto !important;
+  border-radius: 10px;
+  border: 2px solid #222 !important;
+}
+
+.abc-list > p > span:nth-of-type(3) {
+  line-height: 70%;
+}
+
+
+.meet-char-block,
+.meet-char-p {
+  background: rgba(0,0,0,.2) !important;
+}
+
+.meet-char-heading {
+/*  padding: 2% 0 0 0 !important;*/
+}
+
+
+.meet-char-p {
+  padding: 2% !important;
+}
+
+.meet-characters-popover {
+  opacity: .97 !important;
+}
+
+.qc-6-air-vent-arrow {
+  transform: rotate(-20deg) !important;
+}
+
+.qc-6-milk-tank-1-arrow {
+  transform: rotate(135deg) !important;
+}
+
+.qc-6-positive-site-arrow {
+  transform: rotate(-140deg) !important;
+}
+
+.qa-6-milk-filler-arrow {
+  transform: rotate(-20deg) !important;
+}
+
+/* Extend progress bar across screen width on a wide screen frame */
+.wide-frame-1100px iframe#ProgressBar {
+  width: 1100px !important;
+}
+
+/* Remove the color border from popup associated with color icon label */
+.info-icon-popup {
+  border: none;
+}
+
+/* Remove the auto-styled border color from the popover */
+.info-popup {
+  border: none !important;
+}
+
+/* Add full-width Resource Panel */
+.beagleContainer .beagleApp-Resources.open {
+  width: 100vw;
+  background: #555;
+}
+
+.beagleContainer .beagleApp-Resources .appHeader {
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+/* App names must be single words because the LMS creates an element id from the course name. However, 'Course Resources' is more appropriate here and this adds the 'Course ' before resources. */
+.appTitle:before {
+  content: 'Course ';
+}
+
+/* Brings the iFrame up a bit so that the zoom out button is not as obscured */
+.beagleContainer .appContainer {
+  margin-top: -2px;
+}
+
+.beagleContainer .beagleApp-Resources.open iframe#beagle_Resources {
+  width: 100%;
+/*
+  margin: 0 auto;
+  width: 900px;
+  display: block
+*/
+  
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+/*
+.fade-in-load {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+*/
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .7; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Remove the app "Variables" from the screen rendering. This is necessary for function, but has no role in the interface, leading to confusion if clicked on. Variables is the first app in each lesson to enable variable stored content. */
+/*
+.beagleAppItemView:first-of-type {
+  display: none;
+}
+*/
+
+/* Change the name in the interface for the Learning Apps section from 'Apps' to 'Resources' by restyling the text since the LMS does not provide manual editing control */
+
+span.theme-header-beagle__label {
+  color: #CC0000;
+  margin-right: -28px;
+}
+
+/*
+span.theme-header-beagle__label:hover {
+  color: #990000;
+}
+*/
+
+span.theme-header-beagle__label::before {
+  content: 'Resources';
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.videoPlayerPopUp > div {
+  /* no rounded edges on popup container */
+  border-radius: 0 !important;
+  /* override LMS margin-top default, -1px to hide the black border at the top of the media player */
+  margin-top: -1px !important;
+}
+
+/* hide the popup x close button from the full popup width video player */
+/*
+.videoPlayerPopUp  > button > span {
+  display: none !important;
+}
+*/
+
+/* Need to add this back in and style it because audio from hidden windows may still play */
+.videoPlayerPopUp > button {
+  height: 27px;
+  margin: 10px 25px 0 0;
+  cursor: pointer;
+  
+  /* need to hide the button too, not just the span because there can be overlap with YouTube's Info button */
+  display: none;
+}
+
+.videoPlayerPopUp > button > span {
+  color: #CC0000;
+  background: rgba(255,255,255,.8);
+  border: 3px solid #CC0000;
+  border-radius: 50%;
+  width: 100%;
+  cursor: pointer;
+  
+  /* adding display none because audio auto-play issue is in LMS and not affected by closing an open popup */
+  display: none;
+}
+
+
+
+.videoPlayerButton button {
+  background: #F3F3F3;
+}
+
+/* Default Player */
+
+.scene1PlayerIndexTab,
+.scene2PlayerIndexTab,
+.scene3PlayerIndexTab,
+.scene4PlayerIndexTab,
+.scene5PlayerIndexTab,
+.scene6PlayerIndexTab,
+.scene7PlayerIndexTab,
+.scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #cc0000 !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.scene1PlayerIndexTab::before,
+.scene2PlayerIndexTab::before,
+.scene3PlayerIndexTab::before,
+.scene4PlayerIndexTab::before,
+.scene5PlayerIndexTab::before,
+.scene6PlayerIndexTab::before,
+.scene7PlayerIndexTab::before,
+.scene8PlayerIndexTab::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  background: #CC0000;
+  border-radius: 2px;
+}
+
+.scene1PlayerIndexTab::before {
+  top: 18px;
+}
+
+.scene2PlayerIndexTab::before {
+  top: 89px;
+}
+
+.scene3PlayerIndexTab::before {
+  top: 161px;
+}
+
+.scene4PlayerIndexTab::before {
+  top: 234px;
+}
+
+.scene5PlayerIndexTab::before {
+  top: 306px;
+}
+
+.scene6PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene7PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene8PlayerIndexTab::before {
+  top: 463px;
+}
+
+
+/* Custom Player - enables #x of #x ::before content for the tab bar left of player buttons */
+
+
+/* Setting for Lesson 2 - Zones Videos 1-5 */
+
+.L2scene1PlayerIndexTab,
+.L2scene2PlayerIndexTab,
+.L2scene3PlayerIndexTab,
+.L2scene4PlayerIndexTab,
+.L2scene5PlayerIndexTab,
+.L2scene6PlayerIndexTab,
+.L2scene7PlayerIndexTab,
+.L2scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #EEE !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.L2scene1PlayerIndexTab::before,
+.L2scene2PlayerIndexTab::before,
+.L2scene3PlayerIndexTab::before,
+.L2scene4PlayerIndexTab::before,
+.L2scene5PlayerIndexTab::before,
+.L2scene6PlayerIndexTab::before,
+.L2scene7PlayerIndexTab::before,
+.L2scene8PlayerIndexTab::before {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+/*
+  -webkit-transform-origin: center;
+  transform-origin: center;
+*/
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: -300px;
+/*
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+*/
+  background: #CC0000;
+  color: #FFF;
+  padding: 16px 2px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.L2scene1PlayerIndexTab::before {
+  content: '1 of 5';
+  top: 18px;
+}
+
+.L2scene2PlayerIndexTab::before {
+  content: '2 of 5';
+  top: 89px;
+}
+
+.L2scene3PlayerIndexTab::before {
+  content: '3 of 5';
+  top: 161px;
+}
+
+.L2scene4PlayerIndexTab::before {
+  content: '4 of 5';
+  top: 234px;
+}
+
+.L2scene5PlayerIndexTab::before {
+  content: '5 of 5';
+  top: 306px;
+}
+
+/* Setting for Lesson 5 - Collections Videos 1-8 */
+
+.L5scene1PlayerIndexTab,
+.L5scene2PlayerIndexTab,
+.L5scene3PlayerIndexTab,
+.L5scene4PlayerIndexTab,
+.L5scene5PlayerIndexTab,
+.L5scene6PlayerIndexTab,
+.L5scene7PlayerIndexTab,
+.L5scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #EEE !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.L5scene1PlayerIndexTab::before,
+.L5scene2PlayerIndexTab::before,
+.L5scene3PlayerIndexTab::before,
+.L5scene4PlayerIndexTab::before,
+.L5scene5PlayerIndexTab::before,
+.L5scene6PlayerIndexTab::before,
+.L5scene7PlayerIndexTab::before,
+.L5scene8PlayerIndexTab::before {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+/*
+  -webkit-transform-origin: center;
+  transform-origin: center;
+*/
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: -300px;
+/*
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+*/
+  background: #CC0000;
+  color: #FFF;
+  padding: 16px 2px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.L5scene1PlayerIndexTab::before {
+  content: '1 of 8';
+  top: 18px;
+}
+
+.L5scene2PlayerIndexTab::before {
+  content: '2 of 8';
+  top: 89px;
+}
+
+.L5scene3PlayerIndexTab::before {
+  content: '3 of 8';
+  top: 161px;
+}
+
+.L5scene4PlayerIndexTab::before {
+  content: '4 of 8';
+  top: 234px;
+}
+
+.L5scene5PlayerIndexTab::before {
+  content: '5 of 8';
+  top: 306px;
+}
+
+.L5scene6PlayerIndexTab::before {
+  content: '6 of 8';
+  top: 378px;
+}
+
+.L5scene7PlayerIndexTab::before {
+  content: '7 of 8';
+  top: 451px;
+}
+
+.L5scene8PlayerIndexTab::before {
+  content: '8 of 8';
+  top: 522px;
+}
+
+
+
+
+
+
+/* set overide to enable screen content overflow */
+.content-overflow .content {
+  overflow: visible !important;
+}
