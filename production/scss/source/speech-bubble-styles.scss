@@ -1,0 +1,155 @@
+.speech-bubble-left,
+.speech-bubble-left-center,
+.speech-bubble-left-bottom,
+.speech-bubble-right,
+.speech-bubble-right-center,
+.speech-bubble-right-bottom,
+.speech-bubble-bottom,
+.speech-bubble-bottom-left,
+.speech-bubble-bottom-right {
+  padding: 25px !important;
+  box-sizing: content-box;
+  overflow: visible !important;
+  border: 2px solid #333 !important;
+  background: #FFF !important;
+}
+
+.speech-bubble-left:before,
+.speech-bubble-right:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender centered on bottom of bubble*/
+.speech-bubble-bottom:before {
+  content: '';
+  position: absolute;
+  left: 44%;
+  /*  top: 93%;*/
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+  /*  left: 7.5%;*/
+  left: calc(100% - 319px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* Position speech bubble decender on bottom left of bubble*/
+.speech-bubble-bottom-left:before {
+  content: '';
+  position: absolute;
+  /*  left: 83%;*/
+  left: calc(100% - 58px);
+  top: calc(100% - 14px);
+  transform: translateY(0%) rotate(-135deg) skew(10deg, 10deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+/* The default speech bubble aside hangs from the top of the speech bubble  This centers speech bubble on left frame to create greater flexablity*/
+.speech-bubble-left-center:before,
+.speech-bubble-right-center:before {
+  content: '';
+  position: absolute;
+  top: 37%;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left-bottom:before,
+.speech-bubble-right-bottom:before {
+  content: '';
+  position: absolute;
+  top: 71px;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit
+}
+
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after,
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after
+{
+  content: '';
+  position: absolute;
+  /*  top: 0;*/
+  /* Top needs to be 2px (to prevent overlay over border) because speech bubble border is 2px */
+  top: 2px;
+  width: 25px;
+  /*  height: 100%;*/
+  /* need to set the height to less than 100% so it does not overlap the edges of the text box [a hard to identify, intermediate problem depending on the size of the text boxes after rendering] */
+  height: 98%;
+  background: inherit
+}
+
+/* Prevent ::after element from overlaying left border when speech bubble tongue is on left side */
+.speech-bubble-left:after,
+.speech-bubble-left-center:after,
+.speech-bubble-left-bottom:after {
+  left: 0;
+}
+
+/* Prevent ::after element from overlaying right border when speech bubble tongue is on right side */
+.speech-bubble-right:after,
+.speech-bubble-right-center:after,
+.speech-bubble-right-bottom:after {
+  right: 0;
+}
+
+.speech-bubble-bottom:after,
+.speech-bubble-bottom-left:after,
+.speech-bubble-bottom-right:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  background: inherit
+}
+

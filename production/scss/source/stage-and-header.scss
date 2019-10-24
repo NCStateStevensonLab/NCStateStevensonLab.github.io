@@ -1,0 +1,84 @@
+/* Add full-width Resource Panel */
+.beagleContainer .beagleApp-Resources.open {
+  width: 100vw;
+  background: #555;
+}
+
+.beagleContainer .beagleApp-Resources .appHeader {
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+/* App names must be single words because the LMS creates an element id from the course name. However, 'Course Resources' is more appropriate here and this adds the 'Course ' before resources. */
+.appTitle:before {
+  content: 'Course ';
+}
+
+/* Brings the iFrame up a bit so that the zoom out button is not as obscured */
+.beagleContainer .appContainer {
+  margin-top: -2px;
+}
+
+.beagleContainer .beagleApp-Resources.open iframe#beagle_Resources {
+  width: 100%;
+  /*
+  margin: 0 auto;
+  width: 900px;
+  display: block
+  */
+
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+/*
+.fade-in-load {
+opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+*/
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .7; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Remove the app "Variables" from the screen rendering. This is necessary for function, but has no role in the interface, leading to confusion if clicked on. Variables is the first app in each lesson to enable variable stored content. */
+/*
+.beagleAppItemView:first-of-type {
+display: none;
+}
+*/
+
+/* Change the name in the interface for the Learning Apps section from 'Apps' to 'Resources' by restyling the text since the LMS does not provide manual editing control */
+
+span.theme-header-beagle__label {
+  color: #CC0000;
+  margin-right: -28px;
+}
+
+/*
+span.theme-header-beagle__label:hover {
+color: #990000;
+}
+*/
+
+span.theme-header-beagle__label::before {
+  content: 'Resources';
+  color: rgba(255, 255, 255, 0.9);
+}

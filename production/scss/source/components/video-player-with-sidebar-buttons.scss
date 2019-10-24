@@ -1,0 +1,281 @@
+
+.videoPlayerPopUp > div {
+  /* no rounded edges on popup container */
+  border-radius: 0 !important;
+  /* override LMS margin-top default, -1px to hide the black border at the top of the media player */
+  margin-top: -1px !important;
+}
+
+/* hide the popup x close button from the full popup width video player */
+/*
+.videoPlayerPopUp  > button > span {
+display: none !important;
+}
+*/
+
+/* Need to add this back in and style it because audio from hidden windows may still play */
+.videoPlayerPopUp > button {
+  height: 27px;
+  margin: 10px 25px 0 0;
+  cursor: pointer;
+
+  /* need to hide the button too, not just the span because there can be overlap with YouTube's Info button */
+  display: none;
+}
+
+.videoPlayerPopUp > button > span {
+  color: #CC0000;
+  background: rgba(255,255,255,.8);
+  border: 3px solid #CC0000;
+  border-radius: 50%;
+  width: 100%;
+  cursor: pointer;
+
+  /* adding display none because audio auto-play issue is in LMS and not affected by closing an open popup */
+  display: none;
+}
+
+
+
+.videoPlayerButton button {
+  background: #F3F3F3;
+}
+
+/* Default Player */
+
+.scene1PlayerIndexTab,
+.scene2PlayerIndexTab,
+.scene3PlayerIndexTab,
+.scene4PlayerIndexTab,
+.scene5PlayerIndexTab,
+.scene6PlayerIndexTab,
+.scene7PlayerIndexTab,
+.scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #cc0000 !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.scene1PlayerIndexTab::before,
+.scene2PlayerIndexTab::before,
+.scene3PlayerIndexTab::before,
+.scene4PlayerIndexTab::before,
+.scene5PlayerIndexTab::before,
+.scene6PlayerIndexTab::before,
+.scene7PlayerIndexTab::before,
+.scene8PlayerIndexTab::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: 0;
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  background: #CC0000;
+  border-radius: 2px;
+}
+
+.scene1PlayerIndexTab::before {
+  top: 18px;
+}
+
+.scene2PlayerIndexTab::before {
+  top: 89px;
+}
+
+.scene3PlayerIndexTab::before {
+  top: 161px;
+}
+
+.scene4PlayerIndexTab::before {
+  top: 234px;
+}
+
+.scene5PlayerIndexTab::before {
+  top: 306px;
+}
+
+.scene6PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene7PlayerIndexTab::before {
+  top: 463px;
+}
+
+.scene8PlayerIndexTab::before {
+  top: 463px;
+}
+
+
+/* Custom Player - enables #x of #x ::before content for the tab bar left of player buttons */
+
+
+/* Setting for Lesson 2 - Zones Videos 1-5 */
+
+.L2scene1PlayerIndexTab,
+.L2scene2PlayerIndexTab,
+.L2scene3PlayerIndexTab,
+.L2scene4PlayerIndexTab,
+.L2scene5PlayerIndexTab,
+.L2scene6PlayerIndexTab,
+.L2scene7PlayerIndexTab,
+.L2scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #EEE !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.L2scene1PlayerIndexTab::before,
+.L2scene2PlayerIndexTab::before,
+.L2scene3PlayerIndexTab::before,
+.L2scene4PlayerIndexTab::before,
+.L2scene5PlayerIndexTab::before,
+.L2scene6PlayerIndexTab::before,
+.L2scene7PlayerIndexTab::before,
+.L2scene8PlayerIndexTab::before {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+  /*
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  */
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: -300px;
+  /*
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  */
+  background: #CC0000;
+  color: #FFF;
+  padding: 16px 2px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.L2scene1PlayerIndexTab::before {
+  content: '1 of 5';
+  top: 18px;
+}
+
+.L2scene2PlayerIndexTab::before {
+  content: '2 of 5';
+  top: 89px;
+}
+
+.L2scene3PlayerIndexTab::before {
+  content: '3 of 5';
+  top: 161px;
+}
+
+.L2scene4PlayerIndexTab::before {
+  content: '4 of 5';
+  top: 234px;
+}
+
+.L2scene5PlayerIndexTab::before {
+  content: '5 of 5';
+  top: 306px;
+}
+
+/* Setting for Lesson 5 - Collections Videos 1-8 */
+
+.L5scene1PlayerIndexTab,
+.L5scene2PlayerIndexTab,
+.L5scene3PlayerIndexTab,
+.L5scene4PlayerIndexTab,
+.L5scene5PlayerIndexTab,
+.L5scene6PlayerIndexTab,
+.L5scene7PlayerIndexTab,
+.L5scene8PlayerIndexTab {
+  box-sizing: content-box;
+  overflow: visible !important;
+  border-left: 2px solid #EEE !important;
+  margin-top: 0px !important;
+  border-radius: 0 !important;
+}
+
+.L5scene1PlayerIndexTab::before,
+.L5scene2PlayerIndexTab::before,
+.L5scene3PlayerIndexTab::before,
+.L5scene4PlayerIndexTab::before,
+.L5scene5PlayerIndexTab::before,
+.L5scene6PlayerIndexTab::before,
+.L5scene7PlayerIndexTab::before,
+.L5scene8PlayerIndexTab::before {
+  position: absolute;
+  width: 41px;
+  height: 34px;
+  /*
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  */
+  background: inherit;
+  border-left: inherit;
+  border-top: inherit;
+  background: #000;
+  left: -300px;
+  /*
+  -webkit-transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  transform: translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  */
+  background: #CC0000;
+  color: #FFF;
+  padding: 16px 2px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.L5scene1PlayerIndexTab::before {
+  content: '1 of 8';
+  top: 18px;
+}
+
+.L5scene2PlayerIndexTab::before {
+  content: '2 of 8';
+  top: 89px;
+}
+
+.L5scene3PlayerIndexTab::before {
+  content: '3 of 8';
+  top: 161px;
+}
+
+.L5scene4PlayerIndexTab::before {
+  content: '4 of 8';
+  top: 234px;
+}
+
+.L5scene5PlayerIndexTab::before {
+  content: '5 of 8';
+  top: 306px;
+}
+
+.L5scene6PlayerIndexTab::before {
+  content: '6 of 8';
+  top: 378px;
+}
+
+.L5scene7PlayerIndexTab::before {
+  content: '7 of 8';
+  top: 451px;
+}
+
+.L5scene8PlayerIndexTab::before {
+  content: '8 of 8';
+  top: 522px;
+}
