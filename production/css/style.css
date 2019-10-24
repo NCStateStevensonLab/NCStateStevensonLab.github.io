@@ -490,6 +490,16 @@ body {
   background: inherit;
 }
 
+.ncpopup .info-icon-popup:not(.no-restyle) .close span {
+  background-repeat: no-repeat;
+  background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100-border.svg") !important;
+  width: 18px !important;
+  height: 18px;
+  font-size: 0 !important;
+  margin: auto !important;
+  border-bottom: 0 !important;
+}
+
 /* BEGIN Custom CSS */
 .content {
   overflow: hidden;
