@@ -1,5 +1,5 @@
 // Uses our custom class .info-popup instead of the default .info-icon-popup to target custom icon to screens with CSS class
 
-.info-popup:not(.no-restyle) .close span {
-    background:  url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100.svg");
+.info-popup .close span {
+    background:  url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100.svg") !important;
 }

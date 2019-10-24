@@ -8,7 +8,14 @@
 @import "source/smart-sparrow-default";
 
 // Add Animation Library Extras
-@import "source/animation.scss";
+@import "source/animation";
+
+// Add Speech Bubble Styles
+@import "source/speech-bubble-styles";
+
+// Add Custom UI
+@import "source/ui";
+
 
 /* BEGIN Custom CSS */
 
