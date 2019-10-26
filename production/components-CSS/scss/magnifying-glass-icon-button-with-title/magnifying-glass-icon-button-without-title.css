@@ -1,0 +1,67 @@
+/* Magnifying Glass Button without Label */
+/* required to overide LMS animated spinners on any clicked buttons */
+.button.selected:before,
+.button.waiting:before {
+  background: none !important;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.button.waiting {
+  color: rgba(20, 20, 20, 0.8);
+  opacity: 1;
+}
+
+.button.selected {
+  border: none !important;
+  /* required because default in LMS selected is transparent */
+  color: #FFF !important;
+  background: #141414;
+}
+
+.button.button {
+  padding-top: 4rem;
+  padding-left: 16px;
+  background-color: rgba(20, 20, 20, 0.8);
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 0 !important;
+}
+
+.button:hover {
+  background-color: #141414 !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:focus {
+  box-shadow: none !important;
+}
+
+.button.button::before {
+  content: '';
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small.svg) !important;
+  background-repeat: no-repeat !important;
+  display: block;
+  padding-bottom: 100px;
+  width: 90% !important;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  background-size: contain !important;
+}
+
+.button.button:hover::before {
+  content: '';
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small--hover.svg) !important;
+  background-repeat: no-repeat !important;
+  display: block;
+  padding-bottom: 100px;
+  width: 90% !important;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  background-size: contain !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}

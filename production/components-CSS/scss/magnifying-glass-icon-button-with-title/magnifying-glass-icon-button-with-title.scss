@@ -1,0 +1,51 @@
+// In-Component CSS for Magnifying Glass Button
+
+$buttonBackgroundColor: rgba(20, 20, 20, .8);
+$buttonBorderColor: rgba(20, 20, 20, .8);
+
+$buttonBackgroundColorHover: rgba(20, 20, 20, 1);
+$buttonBackgroundColorSelected: rgba(20, 20, 20, 1);
+
+/* Magnifying Glass Button with Label */
+
+/* required to overide LMS animated spinners on any clicked buttons */
+.button.selected:before,
+.button.waiting:before {
+    background: none !important;
+    animation: none;
+}
+
+.button.waiting {
+    color: $buttonBackgroundColor;
+    opacity: 1;
+}
+
+.button.selected {
+//    border: 3px solid #CC0000;
+    /* required because default in LMS selected is transparent */
+    color: #FFF !important;
+    background: $buttonBackgroundColorSelected;
+}
+
+.button.button {
+    padding-top: 4rem;
+    padding-left: 16px;
+    background-color: $buttonBackgroundColor;
+}
+
+.button:hover {
+    background-color: $buttonBackgroundColorHover !important;
+}
+
+.button.button::before {
+    content: '';
+    background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small.svg) !important;
+    background-repeat: no-repeat !important;
+    display: block;
+    padding-bottom: 100px;
+    width: 70% !important;
+    position: absolute;
+    left: 23px;
+    top: 10px;
+    background-size: contain !important;
+}

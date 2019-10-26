@@ -1,0 +1,76 @@
+// In-Component CSS for Magnifying Glass Button WITHOUT Label
+
+$buttonBackgroundColor: rgba(20, 20, 20, .8);
+$buttonBorderColor: rgba(20, 20, 20, .8);
+
+$buttonBackgroundColorHover: rgba(20, 20, 20, 1);
+$buttonBackgroundColorSelected: rgba(20, 20, 20, 1);
+
+/* Magnifying Glass Button without Label */
+
+/* required to overide LMS animated spinners on any clicked buttons */
+.button.selected:before,
+.button.waiting:before {
+    background: none !important;
+    animation: none;
+}
+
+.button.waiting {
+    color: $buttonBackgroundColor;
+    opacity: 1;
+}
+
+.button.selected {
+    border: none !important;
+    /* required because default in LMS selected is transparent */
+    color: #FFF !important;
+    background: $buttonBackgroundColorSelected;
+}
+
+.button.button {
+    padding-top: 4rem;
+    padding-left: 16px;
+    background-color: $buttonBackgroundColor;
+    transition: .3s;
+    
+    // font-size set to 0 to remove button component title
+    font-size: 0 !important;
+}
+
+.button:hover {
+    background-color: $buttonBackgroundColorHover !important;
+    transition: .3s;
+}
+
+// Needs box-shadow overide, can be color or none. Setting to none, because not critical.
+.button:focus {
+//    box-shadow: inset 0 0 0 4px rgba(204, 0, 0, .95) !important;
+    box-shadow: none !important;
+}
+
+.button.button::before {
+    content: '';
+    background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small.svg) !important;
+    background-repeat: no-repeat !important;
+    display: block;
+    padding-bottom: 100px;
+    width: 90% !important;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    background-size: contain !important;
+}
+
+.button.button:hover::before {
+    content: '';
+    background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small--hover.svg) !important;
+    background-repeat: no-repeat !important;
+    display: block;
+    padding-bottom: 100px;
+    width: 90% !important;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    background-size: contain !important;
+    transition: .3s;
+}
