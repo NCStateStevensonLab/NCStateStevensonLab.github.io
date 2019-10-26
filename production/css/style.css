@@ -491,26 +491,38 @@ body {
 }
 
 .info-popup .close span {
-  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/2px-WolfpackRed60-border.svg) !important;
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed60-border.svg) !important;
   width: 18px !important;
   height: 18px;
   font-size: 0 !important;
   margin: auto !important;
   border-bottom: 0 !important;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .info-popup .close span:hover {
   background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100-border.svg") !important;
+  height: 19px;
 }
 
-.enlarge-icon-button {
+.enlarge-icon-button .button {
+  text-decoration: none !important;
+}
+
+.enlarge-icon-button button.button::before {
+  content: "";
+  background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small.svg") !important;
+  background-repeat: no-repeat !important;
+  width: 35% !important;
+  display: block;
+  padding-bottom: 23px;
+  width: 100%;
   position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 32px;
-  height: 32px;
-  background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100-border.svg") !important;
+  left: 21px;
+  top: -21px;
+  height: 0 !important;
+  background-size: contain !important;
 }
 
 /* BEGIN Custom CSS */
