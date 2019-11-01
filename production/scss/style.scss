@@ -24,6 +24,13 @@
   overflow: hidden;
 }
 
+
+// Remove apparance of border on top bar header for smoother transition to Resource resource iframe
+.headerContainer {
+  border-bottom: 1px solid transparent;
+}
+
+
 .speech-bubble-left,
 .speech-bubble-left-center,
 .speech-bubble-left-bottom,
@@ -1087,7 +1094,8 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 .beagleContainer .beagleApp-Resources .appHeader {
   margin: 0 auto;
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 20px 12px 14px;
+  border-bottom: 0;
 }
 
 /* App names must be single words because the LMS creates an element id from the course name. However, 'Course Resources' is more appropriate here and this adds the 'Course ' before resources. */
