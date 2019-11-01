@@ -1079,7 +1079,9 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 /* Add full-width Resource Panel */
 .beagleContainer .beagleApp-Resources.open {
   width: 100vw;
-  background: #555;
+//  background: #555;
+//  opacity: .97;
+  background: transparent;
 }
 
 .beagleContainer .beagleApp-Resources .appHeader {
@@ -1106,10 +1108,12 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   display: block
 */
   
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
+// This actually loads better without this for the 100% width slide-in for the Resource resource.
+  
+//  animation-name: fadeInOpacity;
+//  animation-iteration-count: 1;
+//  animation-timing-function: ease-in;
+//  animation-duration: 3s;
 }
 
 /*
