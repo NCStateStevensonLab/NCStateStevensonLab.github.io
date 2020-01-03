@@ -1,7 +1,7 @@
 // Add red close button to popup
 
 .info-popup .close span {
-    background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed60-border.svg) !important;
+    background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/icon-close-2px-WolfpackRed60-border.svg) !important;
     width: 18px !important;
     height: 18px;
     font-size: 0 !important;
@@ -11,7 +11,7 @@
     cursor: pointer;
 
     &:hover {
-        background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-close-2px-WolfpackRed100-border.svg") !important;
+        background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/icon-close-2px-WolfpackRed100-border.svg") !important;
         height: 19px;
     }
 }
@@ -45,7 +45,7 @@
 
 .enlarge-icon-button button.button::before {
     content: "";
-    background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/Icons/icon-magnifying-glass-small.svg") !important;
+    background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/icon-magnifying-glass-small.svg") !important;
     background-repeat: no-repeat !important;
     width: 35% !important;
     display: block;

@@ -1083,12 +1083,53 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   border: none !important;
 }
 
+// Custom icons for Learning Apps
+
+// Glossary
+.beagleAppItem-Glossary .appIcon img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/app-icon/icon-glossary.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+// Resources App
+.beagleAppItem-Resources .appIcon img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/app-icon/icon-resource.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+// Notes App
+.beagleAppItem-Notes .appIcon img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/app-icon/icon-notes.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+//
+
 /* Add full-width Resource Panel */
 .beagleContainer .beagleApp-Resources.open {
   width: 100vw;
 //  background: #555;
 //  opacity: .97;
   background: transparent;
+}
+
+.beagleContainer .beagleAppSidebarView .closeBtn {
+  background: url("https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/close-icon/icon-close-white.svg");
 }
 
 .beagleContainer .beagleApp-Resources .appHeader {
