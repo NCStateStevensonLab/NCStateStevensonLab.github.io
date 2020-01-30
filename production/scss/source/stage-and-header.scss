@@ -12,7 +12,7 @@
 
 /* App names must be single words because the LMS creates an element id from the course name. However, 'Course Resources' is more appropriate here and this adds the 'Course ' before resources. */
 .appTitle:before {
-  content: 'Course ';
+	content: 'Course Resources &#124; Help';
 }
 
 /* Brings the iFrame up a bit so that the zoom out button is not as obscured */
