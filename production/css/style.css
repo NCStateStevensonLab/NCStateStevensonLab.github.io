@@ -1577,6 +1577,11 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
   width: 400px !important;
 }
 
+.theme-header-beagle .beagleAppItemView {
+  -webkit-box-flex: 0;
+          flex: 0 0 25%;
+}
+
 .beagleAppItem-Glossary .appIcon img {
   display: block;
   box-sizing: border-box;
