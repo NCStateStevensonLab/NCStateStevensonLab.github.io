@@ -1691,7 +1691,7 @@ span.theme-header-beagle__label:hover {
 }
 */
 span.theme-header-beagle__label::before {
-  content: 'Course Resources &#124; Help';
+  content: 'Course Resources | Help';
   color: rgba(255, 255, 255, 0.9);
 }
 
