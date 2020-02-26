@@ -82,3 +82,8 @@ span.theme-header-beagle__label::before {
   content: 'Resources';
   color: rgba(255, 255, 255, 0.9);
 }
+
+/* Remove the blue add terms to glossary button */
+.glossary .glossary-body .add-button {
+	display: none;
+}
