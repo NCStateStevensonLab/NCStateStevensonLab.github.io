@@ -1,0 +1,4 @@
+/* Remove the blue add terms to glossary button */
+.glossary .glossary-body .add-button {
+display: none !important;
+}
