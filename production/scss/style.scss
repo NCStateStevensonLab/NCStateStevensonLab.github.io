@@ -1095,7 +1095,11 @@ credit to: https://stackoverflow.com/questions/28967916/css-line-after-h2 */
 
 // Change flex from three default icons (33.33%) to use four icons (25%)
 .theme-header-beagle .beagleAppItemView {
-	flex: 0 0 25%;
+//	flex: 0 0 25%;
+}
+
+.beagleAppItem-Glossary {
+	display: none;
 }
 
 // Make applet icon names bold weight
