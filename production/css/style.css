@@ -588,6 +588,11 @@ span.theme-header-beagle__label::before {
   display: none;
 }
 
+/* Add margin to bottom of Glossary panel to enable scroll and text visiblity at end of the list */
+.glossary .glossary-body .word-list-container {
+  margin-bottom: 125px;
+}
+
 .info-popup .close span {
   background: url(https://foodsafety.ncsu.edu/Dairy_Environmental_Monitoring/assets/Course/icons/icon-close-2px-WolfpackRed60-border.svg) !important;
   width: 18px !important;
